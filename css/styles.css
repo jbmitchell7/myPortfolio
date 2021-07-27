@@ -1,0 +1,61 @@
+/*
+Colors Used
+Yellow: #FFD53D
+Aquamarine: #40B0DF
+Blue Grotto: #0067B3
+Blue: #0000A3
+*/
+
+body {
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  font-family: 'BioRhyme', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'BioRhyme', sans-serif;
+  line-height: 75px;
+}
+
+a {
+  color: #0000A3;
+}
+
+a:visited {
+  color: #0067B3;
+}
+
+a:hover, a:focus {
+  /*no underlining when hovering*/
+  text-decoration: none;
+}
+
+a:active {
+  color: #FFD53D;
+}
+
+button {
+  border: none;
+  /*will not inherit otherwise*/
+  font-family: inherit;
+  background-color: #0067B3;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button_secondary {
+  background-color: #FFD53D;
+  color: #0000A3;
+}
