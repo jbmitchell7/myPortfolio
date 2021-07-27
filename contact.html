@@ -8,21 +8,35 @@
   <body>
     <header>
       <!-- add logo here -->
-      <img src="http://via.placeholder.com/200x70" alt="logo">
+      <img src="http://via.placeholder.com/200x70" alt="">
       <nav>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
           </li>
-          <li>
-            <a href="about.html">About</a>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About Me</a>
           </li>
         </ul>
       </nav>
     </header>
+    <div>
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email">*E-mail: </label>
+        <input type="email" id="contact-email" required>
+
+        <label class="standard label" for="contact-phone">Phone Number: </label>
+        <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+        <label class="standard label" for="contact-message">Message (Max 240 Characters): </label>
+        <textarea maxlength="240" id="contact-message" required></textarea>
+
+        <input type="submit" value="Send message">
+      </form>
+    </div>
     <div>
       Jake Mitchell<br>
       <a href="mailto:jbmitchell747@gmail.com">Contact Me</a>
@@ -30,11 +44,12 @@
       Email:
       <a href="mailto:jbmitchell747@gmail.com">jbmitchell747@gmail.com</a>
     </div>
-    <div>
+    <footer>
       <p>Find me on</p>
-      <img src="img/github.svg" alt="Github">
-      <img src="img/twitter.svg" alt="Twitter">
-      <img src="img/linkedin.svg" alt="LinkedIn">
-    </div>
+      <img src="img/github.svg" alt="Github Logo">
+      <img src="img/twitter.svg" alt="Twitter Logo">
+      <img src="img/linkedin.svg" alt="LinkedIn Logo">
+    </footer>
+    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
