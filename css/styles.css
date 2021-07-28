@@ -5,20 +5,19 @@ Aquamarine: #40B0DF
 Blue Grotto: #0067B3
 Blue: #0000A3
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Space Mono', sans-serif;
   font-weight: 400;
 }
 
-header {
-  font-family: 'BioRhyme', sans-serif;
-  font-weight: 400;
-}
-
 h1 {
   font-family: 'BioRhyme', sans-serif;
   line-height: 75px;
+  padding-left: 40px
 }
 
 a {
@@ -36,6 +35,107 @@ a:hover, a:focus {
 
 a:active {
   color: #FFD53D;
+}
+
+.page-header {
+  font-family: 'BioRhyme', sans-serif;
+  font-weight: 400;
+  display: flex;
+  width: 100%;
+  padding: 20px
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+  min-width: 0;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.main-navigation {
+
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item {
+
+}
+
+.navigation-list__item--active {
+
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: auto;
+}
+
+.grid__item {
+  display: inline-block;
+  width: 50%;
+}
+
+@supports (display: grid) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid__item {
+    background-color: lightgray;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px
+  }
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: auto;
+}
+
+#portrait {
+  width: 250px;
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.about-me {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: auto;
+}
+
+.experience-table {
+  float: left;
+  margin-right: 40px;
+}
+
+#contact-form {
+  padding-left: 40px;
+}
+
+.contact-info {
+  padding-left: 40px;
 }
 
 button {
