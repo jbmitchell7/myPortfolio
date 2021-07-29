@@ -27,29 +27,13 @@ h1 {
     padding-left: 40px
 }
 
-a {
-    color: #0000A3;
-}
-
-a:visited {
-    color: #0067B3;
-}
-
-a:hover, a:focus {
-    /*no underlining when hovering*/
-    text-decoration: none;
-}
-
-a:active {
-    color: #FFD53D;
-}
-
 .page-header {
+    background-color: #40B0DF;
     font-family: 'BioRhyme', sans-serif;
     font-weight: 400;
     display: flex;
     width: 100%;
-    padding: 20px
+    padding: 0px
 }
 
 .page-header__item {
@@ -63,7 +47,7 @@ a:active {
 }
 
 .main-navigation {
-
+    padding: 40px;
 }
 
 .navigation-list {
@@ -73,10 +57,11 @@ a:active {
 .navigation-list li {
     display: inline-block;
     margin-left: 15px;
+    font-size: 20px;
 }
 
 .navigation-list__item {
-
+    color: #FFD53D;
 }
 
 .navigation-list__item--active {
@@ -84,6 +69,7 @@ a:active {
 }
 
 .page-footer {
+  background-color: #40B0DF;
   clear: both;
   display: flex;
   flex-direction: column;
@@ -118,6 +104,7 @@ a:active {
     max-width: 700px;
     margin: 0 auto;
     margin-bottom: auto;
+    margin-top: 40px;
 }
 
 #portrait {
@@ -139,6 +126,25 @@ a:active {
     font-style: italic;
     padding-left: 40px;
 }
+
+a {
+    color: #0000A3;
+    text-decoration: none;
+}
+
+a:visited {
+    /* color: #0067B3; */
+}
+
+a:hover, a:focus {
+    /*underlining when hovering*/
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000A3;
+}
+
 
 button {
     border: none;
