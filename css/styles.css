@@ -28,7 +28,7 @@ h1 {
 }
 
 .page-header {
-    background-color: #40B0DF;
+    background-color: #0000A3;
     font-family: 'BioRhyme', sans-serif;
     font-weight: 400;
     display: flex;
@@ -39,6 +39,10 @@ h1 {
 .page-header__item {
     flex: 0 1 200px;
     min-width: 0;
+}
+
+.logo {
+    padding: 30px
 }
 
 .page-header__item:last-child {
@@ -69,7 +73,6 @@ h1 {
 }
 
 .page-footer {
-  background-color: #40B0DF;
   clear: both;
   display: flex;
   flex-direction: column;
@@ -105,6 +108,10 @@ h1 {
     margin: 0 auto;
     margin-bottom: auto;
     margin-top: 40px;
+}
+
+.introduction {
+    font-size: 15px;
 }
 
 #portrait {
