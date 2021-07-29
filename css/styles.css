@@ -84,20 +84,12 @@ a:active {
 }
 
 .page-footer {
-<<<<<<< HEAD
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: auto;
   padding-bottom: 30px;
-=======
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: auto;
->>>>>>> df1d8fd69f9d4294a6e0e48448ea90d87b1c9dfc
 }
 
 .grid__item {
