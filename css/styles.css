@@ -42,7 +42,10 @@ h1 {
 }
 
 .logo {
-    padding: 30px
+    padding:40px;
+    height: 100%;
+    min-height: 150px;
+
 }
 
 .page-header__item:last-child {
@@ -134,6 +137,14 @@ h1 {
     padding-left: 40px;
 }
 
+.about-me {
+    text-align: center;
+}
+
+.personal-description {
+    margin: 20px;
+}
+
 a {
     color: #0000A3;
     text-decoration: none;
@@ -153,24 +164,89 @@ a:active {
 }
 
 
-button {
-    border: none;
-    /*will not inherit otherwise*/
-    font-family: inherit;
-    background-color: #0067B3;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+button, .button {
+      /* overwrites browser defaults */
+      /* resets the border */
+      border: none;
+      display: inline-block;
+      font-family: inherit;
+      /* style button */
+      background-color: #0067B3;
+      color: #FFD53D;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 3px;
+      margin-left: 20px;
+      /* width of the border, type, color */
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      transition: 0.2s opacity;
 }
 
-button:hover, button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+button:hover, button:focus, .button:hover, .button:focus {
+
+      /* lets the mouse appear as a hand when hovering over the button */
+      cursor: pointer;
+      /* reduces the opacity of the button to 80% */
+      opacity: 0.8;
 }
+
 
 .button_secondary {
     background-color: #FFD53D;
     color: #0000A3;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #red;
+  }
+}
+
+@keyframes bubble-move {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0px, -150px);
+  }
+}
+#chemistry {
+    margin: 10%;
+}
+
+#XMLID_65_ {
+  animation: 2s color-change infinite alternate linear;
+}
+
+#XMLID_119_, #XMLID_148_ {
+    animation: 3s bubble-move infinite alternate linear;
 }
