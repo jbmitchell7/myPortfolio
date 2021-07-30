@@ -248,5 +248,21 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #XMLID_119_, #XMLID_148_ {
-    animation: 3s bubble-move infinite alternate linear;
+    animation: 3s bubble-move infinite normal ease;
+}
+
+#XMLID_117_, #XMLID_149_ {
+    animation: 3s bubble-move infinite normal ease-in;
+}
+
+#XMLID_127_ {
+    animation: 4s bubble-move infinite normal ease-out;
+}
+
+#XMLID_128_, #XMLID_145_ {
+    animation: 4s bubble-move infinite normal ease-out;
+}
+
+#XMLID_129_, #XMLID_143_ {
+    animation: 4s bubble-move infinite normal ease-in;
 }
