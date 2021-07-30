@@ -28,7 +28,7 @@ h1 {
 }
 
 .page-header {
-    background-color: #0000A3;
+    background-color: #40B0DF;
     font-family: 'BioRhyme', sans-serif;
     font-weight: 400;
     display: flex;
@@ -171,7 +171,7 @@ button, .button {
       display: inline-block;
       font-family: inherit;
       /* style button */
-      background-color: #0067B3;
+      background-color: #0000A3;
       color: #FFD53D;
       text-decoration: none;
       padding: 10px;
@@ -192,8 +192,18 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 
 .button_secondary {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
     background-color: #FFD53D;
     color: #0000A3;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 20px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
 }
 
 @media all and (max-width: 500px) {
@@ -260,7 +270,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #XMLID_128_, #XMLID_145_ {
-    animation: 4s bubble-move infinite normal ease-out;
+    animation: 5s bubble-move infinite normal ease-out;
 }
 
 #XMLID_129_, #XMLID_143_ {
