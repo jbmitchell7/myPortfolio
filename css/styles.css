@@ -24,7 +24,8 @@ body {
 h1 {
     font-family: 'BioRhyme', sans-serif;
     line-height: 75px;
-    padding-left: 40px
+    padding-left: 40px;
+    text-align: center;
 }
 
 .page-header {
@@ -71,10 +72,6 @@ h1 {
     color: #FFD53D;
 }
 
-.navigation-list__item--active {
-
-}
-
 .page-footer {
   clear: both;
   display: flex;
@@ -98,11 +95,11 @@ h1 {
     }
 
     .grid__item {
-        background-color: lightgray;
         width: auto;
         min-height: auto;
         margin: 0;
-        padding: 20px
+        padding: 20px;
+        align-content: center;
     }
 }
 
@@ -111,6 +108,7 @@ h1 {
     margin: 0 auto;
     margin-bottom: auto;
     margin-top: 40px;
+    text-align: center;
 }
 
 .introduction {
@@ -135,10 +133,6 @@ h1 {
 #required-p {
     font-style: italic;
     padding-left: 40px;
-}
-
-.about-me {
-    text-align: center;
 }
 
 .personal-description {
@@ -207,9 +201,46 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @media all and (max-width: 500px) {
+
+    .page-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-header__item {
+        flex: 0;
+    }
+
+    .logo {
+        padding: 10px 40px;
+        min-height: 0px;
+    }
+
+    .main-navigation {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .navigation-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation-list li {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .navigation-list li a {
+        margin: 0;
+    }
+
   .grid {
     grid-template-columns: 1fr;
   }
+
 }
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
