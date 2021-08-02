@@ -34,7 +34,7 @@ h1 {
     font-weight: 400;
     display: flex;
     width: 100%;
-    padding: 0px
+    padding: 0px;
 }
 
 .page-header__item {
@@ -157,7 +157,6 @@ a:active {
     color: #0000A3;
 }
 
-
 button, .button {
       /* overwrites browser defaults */
       /* resets the border */
@@ -183,7 +182,6 @@ button:hover, button:focus, .button:hover, .button:focus {
       /* reduces the opacity of the button to 80% */
       opacity: 0.8;
 }
-
 
 .button_secondary {
     border: none;
@@ -237,24 +235,41 @@ button:hover, button:focus, .button:hover, .button:focus {
         margin: 0;
     }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
+    .grid {
+        grid-template-columns: 1fr;
+    }
 
+    .profile {
+        margin-top: 0;
+    }
+
+    .profile h1 {
+        padding: 0;
+    }
+
+    #portrait {
+        width: 250px;
+        border-radius: 50%;
+        margin: auto;
+    }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -264,9 +279,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #red;
   }
@@ -280,6 +297,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     transform: translate(0px, -150px);
   }
 }
+
 #chemistry {
     margin: 10%;
 }
