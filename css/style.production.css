@@ -1,19 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 :root {
     /* yellow */
-    --primary-color: #FFD53D;
     /* aquamarine */
-    --secondary-color: #40B0DF;
     /* blue grotto */
-    --blue-grotto: #0067B3;
     /* blue */
-    --blue: #0000A3;
-    --font-header: 'BioRhyme', sans-serif;
-    --font-primary: 'Space Mono', sans-serif;
 
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -21,31 +23,40 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
+  font-family: 'Space Mono', sans-serif;
   font-weight: 400;
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1 {
-    font-family: var(--font-header);
+    font-family: 'BioRhyme', sans-serif;
     line-height: 75px;
     padding-left: 40px;
     text-align: center;
 }
 
 .page-header {
-    background-color: var(--secondary-color);
-    font-family: var(--font-header);
+    background-color: #40B0DF;
+    font-family: 'BioRhyme', sans-serif;
     font-weight: 400;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 0px;
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
     min-width: 0;
 }
 
@@ -57,7 +68,9 @@ h1 {
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: right;
 }
 
@@ -76,13 +89,18 @@ h1 {
 }
 
 .navigation-list__item {
-    color: var(--primary-color);
+    color: #FFD53D;
 }
 
 .page-footer {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   margin-top: auto;
   padding-bottom: 30px;
@@ -96,7 +114,9 @@ h1 {
 @supports (display: grid) {
 
     .grid {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
@@ -106,7 +126,8 @@ h1 {
         min-height: auto;
         margin: 0;
         padding: 20px;
-        align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
     }
 }
 
@@ -147,7 +168,7 @@ h1 {
 }
 
 a {
-    color: var(--blue);
+    color: #0000A3;
     text-decoration: none;
 }
 
@@ -161,24 +182,46 @@ a:hover, a:focus {
 }
 
 a:active {
-    color: var(--blue);
+    color: #0000A3;
 }
 
-button, .button {
+button {
       /* overwrites browser defaults */
       /* resets the border */
       border: none;
       display: inline-block;
       font-family: inherit;
       /* style button */
-      background-color: var(--blue);
-      color: var(--primary-color);
+      background-color: #0000A3;
+      color: #FFD53D;
       text-decoration: none;
       padding: 10px;
       border-radius: 3px;
       margin-left: 20px;
       /* width of the border, type, color */
       border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      -webkit-transition: 0.2s opacity;
+      -o-transition: 0.2s opacity;
+      transition: 0.2s opacity;
+}
+
+.button {
+      /* overwrites browser defaults */
+      /* resets the border */
+      border: none;
+      display: inline-block;
+      font-family: inherit;
+      /* style button */
+      background-color: #0000A3;
+      color: #FFD53D;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 3px;
+      margin-left: 20px;
+      /* width of the border, type, color */
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      -webkit-transition: 0.2s opacity;
+      -o-transition: 0.2s opacity;
       transition: 0.2s opacity;
 }
 
@@ -194,26 +237,35 @@ button:hover, button:focus, .button:hover, .button:focus {
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color: var(--primary-color);
-    color: var(--blue);
+    background-color: #FFD53D;
+    color: #0000A3;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     margin-left: 20px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }
 
 @media all and (max-width: 500px) {
 
     .page-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .page-header__item {
-        flex: 0;
+        -webkit-box-flex: 0;
+            -ms-flex: 0;
+                flex: 0;
     }
 
     .logo {
@@ -229,8 +281,12 @@ button:hover, button:focus, .button:hover, .button:focus {
     .navigation-list {
         margin: 0;
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 
     .navigation-list li {
@@ -243,6 +299,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     }
 
     .grid {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -263,6 +320,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -282,6 +340,20 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #red;
+  }
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -296,12 +368,25 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-@keyframes bubble-move {
+@-webkit-keyframes bubble-move {
   from {
-    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
   }
   to {
-    transform: translate(0px, -150px);
+    -webkit-transform: translate(0px, -150px);
+            transform: translate(0px, -150px);
+  }
+}
+
+@keyframes bubble-move {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  to {
+    -webkit-transform: translate(0px, -150px);
+            transform: translate(0px, -150px);
   }
 }
 
@@ -310,25 +395,31 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #XMLID_65_ {
-  animation: 2s color-change infinite alternate linear;
+  -webkit-animation: 2s color-change infinite alternate linear;
+          animation: 2s color-change infinite alternate linear;
 }
 
 #XMLID_119_, #XMLID_148_ {
-    animation: 3s bubble-move infinite normal ease;
+    -webkit-animation: 3s bubble-move infinite normal ease;
+            animation: 3s bubble-move infinite normal ease;
 }
 
 #XMLID_117_, #XMLID_149_ {
-    animation: 3s bubble-move infinite normal ease-in;
+    -webkit-animation: 3s bubble-move infinite normal ease-in;
+            animation: 3s bubble-move infinite normal ease-in;
 }
 
 #XMLID_127_ {
-    animation: 4s bubble-move infinite normal ease-out;
+    -webkit-animation: 4s bubble-move infinite normal ease-out;
+            animation: 4s bubble-move infinite normal ease-out;
 }
 
 #XMLID_128_, #XMLID_145_ {
-    animation: 5s bubble-move infinite normal ease-out;
+    -webkit-animation: 5s bubble-move infinite normal ease-out;
+            animation: 5s bubble-move infinite normal ease-out;
 }
 
 #XMLID_129_, #XMLID_143_ {
-    animation: 4s bubble-move infinite normal ease-in;
+    -webkit-animation: 4s bubble-move infinite normal ease-in;
+            animation: 4s bubble-move infinite normal ease-in;
 }
