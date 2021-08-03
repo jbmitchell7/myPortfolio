@@ -252,52 +252,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 @media all and (max-width: 500px) {
 
-    .page-header {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-
-    .page-header__item {
-        -webkit-box-flex: 0;
-            -ms-flex: 0;
-                flex: 0;
-    }
-
-    .logo {
-        padding: 10px 40px;
-        min-height: 0px;
-    }
-
-    .main-navigation {
-        padding: 0;
-        margin-bottom: 10px;
-    }
-
-    .navigation-list {
-        margin: 0;
-        padding: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-    }
-
-    .navigation-list li {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .navigation-list li a {
-        margin: 0;
-    }
-
     .grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -321,15 +275,64 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
+@media all and (max-width: 875px) {
 
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
+    .main-navigation {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .navigation-list {
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .navigation-list li {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .navigation-list li a {
+        margin: 0;
+    }
+
+    .grid {
+        grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .page-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .page-header__item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0;
+        flex: 0;
+    }
+
+    .logo {
+        padding: 10px 40px;
+        min-height: 0px;
+        max-height: 100px;
+        max-width: 200px;
+    }
 }
 
 @-webkit-keyframes color-change {
