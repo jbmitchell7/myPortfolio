@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+/* Global Variables*/
 :root {
     /* yellow */
     /* aquamarine */
@@ -38,7 +39,6 @@ body {
 h1 {
     font-family: 'BioRhyme', sans-serif;
     line-height: 75px;
-    padding-left: 40px;
     text-align: center;
 }
 
@@ -307,10 +307,6 @@ button:hover, button:focus, .button:hover, .button:focus {
         margin-top: 0;
     }
 
-    .profile h1 {
-        padding: 0;
-    }
-
     #portrait {
         width: 250px;
         border-radius: 50%;
@@ -333,10 +329,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
   }
 }
 
