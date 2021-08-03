@@ -35,6 +35,10 @@ h1 {
     text-align: center;
 }
 
+.about-me {
+    text-align: center;
+}
+
 .page-header {
     background-color: var(--secondary-color);
     font-family: var(--font-header);
