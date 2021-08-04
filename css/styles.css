@@ -156,6 +156,10 @@ a {
     text-decoration: none;
 }
 
+.white-link, .white-link:active {
+    color: white;
+}
+
 a:visited {
     /* color: var(--blue-grotto); */
 }
