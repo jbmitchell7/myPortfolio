@@ -12,15 +12,15 @@
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  font-family: 'Space Mono', sans-serif;
-  font-weight: 400;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -79,12 +79,12 @@ h1 {
 }
 
 .page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: auto;
-  padding-bottom: 30px;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 30px;
 }
 
 .grid__item {
@@ -164,47 +164,47 @@ a:active {
 }
 
 button {
-      /* overwrites browser defaults */
-      /* resets the border */
-      border: none;
-      display: inline-block;
-      font-family: inherit;
-      /* style button */
-      background-color: #0000A3;
-      color: #FFD53D;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 3px;
-      margin-left: 20px;
-      /* width of the border, type, color */
-      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-      transition: 0.2s opacity;
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    /* style button */
+    background-color: #0000A3;
+    color: #FFD53D;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 20px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
 }
 
 .button {
-      /* overwrites browser defaults */
-      /* resets the border */
-      border: none;
-      display: inline-block;
-      font-family: inherit;
-      /* style button */
-      background-color: #0000A3;
-      color: #FFD53D;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 3px;
-      margin-left: 20px;
-      /* width of the border, type, color */
-      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-      transition: 0.2s opacity;
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    /* style button */
+    background-color: #0000A3;
+    color: #FFD53D;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 20px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
 
-      /* lets the mouse appear as a hand when hovering over the button */
-      cursor: pointer;
-      /* reduces the opacity of the button to 80% */
-      opacity: 0.8;
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
 }
 
 .button_secondary {
@@ -241,10 +241,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @media all and (min-width: 500px) and (max-width: 750px){
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
+    .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media all and (max-width: 875px) {
@@ -308,26 +308,26 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
+    0% {
+        fill: #edc655;
+    }
 
-  50% {
-    fill: #fcffad;
-  }
+    50% {
+        fill: #fcffad;
+    }
 
-  100% {
-    fill: #red;
-  }
+    100% {
+        fill: #red;
+    }
 }
 
 @keyframes bubble-move {
-  from {
-    transform: translate(0, 0px);
-  }
-  to {
-    transform: translate(0px, -150px);
-  }
+    from {
+        transform: translate(0, 0px);
+    }
+    to {
+        transform: translate(0px, -150px);
+    }
 }
 
 #chemistry {
@@ -335,7 +335,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #XMLID_65_ {
-  animation: 2s color-change infinite alternate linear;
+    animation: 2s color-change infinite alternate linear;
 }
 
 #XMLID_119_, #XMLID_148_ {
