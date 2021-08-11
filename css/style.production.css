@@ -117,6 +117,26 @@ h1 {
     width: 50%;
 }
 
+.intro-grid {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 20px;
+}
+
+.intro-grid__item {
+    margin: 0;
+    padding: 20px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+.intro-grid__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+
 @supports (display: grid) {
 
     .grid {
@@ -148,7 +168,6 @@ h1 {
 .profile {
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: auto;
     margin-top: 40px;
     text-align: center;
 }
@@ -215,7 +234,6 @@ button {
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    margin-left: 20px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: 0.2s opacity;
@@ -235,7 +253,6 @@ button {
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    margin-left: 20px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: 0.2s opacity;
@@ -283,6 +300,16 @@ button:hover, button:focus, .button:hover, .button:focus {
         width: 250px;
         border-radius: 50%;
         margin: auto;
+    }
+    .intro-grid {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .intro-grid__item:last-child {
+        margin-top: 20px;
     }
 }
 
@@ -436,3 +463,4 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-animation: 4s bubble-move infinite normal ease-in;
             animation: 4s bubble-move infinite normal ease-in;
 }
+
