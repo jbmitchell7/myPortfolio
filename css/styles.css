@@ -156,21 +156,26 @@ h1 {
     border-radius: 50%;
 }
 
-#contact-form {
+#contactForm {
     padding-left: 40px;
+}
+
+#contactEmail, #contactPhone {
+    margin-bottom: 20px;
 }
 
 .contact-info {
+    margin-top: 30px;
     padding-left: 40px;
 }
 
-#required-p {
+#requiredP {
     font-style: italic;
     padding-left: 40px;
 }
 
 .personal-description {
-    margin: 20px;
+    margin: 30px;
 }
 
 a {
