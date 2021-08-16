@@ -90,11 +90,6 @@ h1 {
     padding-bottom: 30px;
 }
 
-.grid__item {
-    display: inline-block;
-    width: 50%;
-}
-
 .section {
     display: flex;
     flex-direction: column;
@@ -116,6 +111,31 @@ h1 {
 .aboutMe__item:last-child {
     flex: 1 1 auto;
     margin-top: 40px;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    color: var(--blue);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 20px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.grid__item {
+    display: inline-block;
+    width: 50%;
 }
 
 @supports (display: grid) {
@@ -182,17 +202,9 @@ h1 {
     padding-left: 40px;
 }
 
-.personal-description {
-    margin: 30px;
-}
-
 a {
     color: var(--blue);
     text-decoration: none;
-}
-
-.white-link, .white-link:active {
-    color: white;
 }
 /* 
 a:visited {
@@ -206,46 +218,6 @@ a:hover, a:focus {
 
 a:active {
     color: var(--blue);
-}
-
-button, .button {
-    /* overwrites browser defaults */
-    /* resets the border */
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    /* style button */
-    background-color: var(--blue);
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: 0.2s opacity;
-}
-
-button:hover, button:focus, .button:hover, .button:focus {
-
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-}
-
-.button_secondary {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    background-color: var(--primary-color);
-    color: var(--blue);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    margin-left: 20px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: 0.2s opacity;
 }
 
 @media all and (max-width: 500px) {
