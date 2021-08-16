@@ -33,11 +33,7 @@ h1 {
     font-family: var(--font-header);
     line-height: 75px;
     text-align: center;
-    color: var(--blue);
-}
-
-.about-me {
-    text-align: center;
+    color: white;
 }
 
 .page-header {
@@ -99,18 +95,27 @@ h1 {
     width: 50%;
 }
 
-.intro-grid {
-    display: inline-flex;
+.section {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
+    padding: 40px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: var(--blue-grotto);
+    border-radius: 20px;
+    color: white;
 }
 
-.intro-grid__item {
+.aboutMe__item {
     margin: 0;
-    align-content: center;
+    justify-content: flex-end;
+
 }
 
-.intro-grid__item:last-child {
+.aboutMe__item:last-child {
     flex: 1 1 auto;
+    margin-top: 40px;
 }
 
 @supports (display: grid) {
@@ -142,7 +147,6 @@ h1 {
     max-width: 700px;
     margin: 0 auto;
     margin-top: 40px;
-    text-align: center;
 }
 
 .introduction {
@@ -151,9 +155,13 @@ h1 {
 
 #portrait {
     width: 250px;
-    float: left;
-    margin-right: 40px;
     border-radius: 50%;
+    margin: auto;
+}
+
+#contactMe {
+    text-align: left;
+
 }
 
 #contactForm {
@@ -246,23 +254,6 @@ button:hover, button:focus, .button:hover, .button:focus {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-
-    .profile {
-        margin-top: 0;
-    }
-
-    #portrait {
-        width: 250px;
-        border-radius: 50%;
-        margin: auto;
-    }
-    .intro-grid {
-        flex-direction: column;
-    }
-
-    .intro-grid__item:last-child {
-        margin-top: 20px;
-    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px){
@@ -316,6 +307,7 @@ button:hover, button:focus, .button:hover, .button:focus {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        position: fixed;
     }
 
     .page-header__item {
@@ -332,53 +324,3 @@ button:hover, button:focus, .button:hover, .button:focus {
     }
 }
 
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: red;
-    }
-}
-
-@keyframes bubble-move {
-    from {
-        transform: translate(0, 0px);
-    }
-    to {
-        transform: translate(0px, -150px);
-    }
-}
-
-#chemistry {
-    margin: 10%;
-}
-
-#XMLID_65_ {
-    animation: 2s color-change infinite alternate linear;
-}
-
-#XMLID_119_, #XMLID_148_ {
-    animation: 3s bubble-move infinite normal ease;
-}
-
-#XMLID_117_, #XMLID_149_ {
-    animation: 3s bubble-move infinite normal ease-in;
-}
-
-#XMLID_127_ {
-    animation: 4s bubble-move infinite normal ease-out;
-}
-
-#XMLID_128_, #XMLID_145_ {
-    animation: 5s bubble-move infinite normal ease-out;
-}
-
-#XMLID_129_, #XMLID_143_ {
-    animation: 4s bubble-move infinite normal ease-in;
-}
