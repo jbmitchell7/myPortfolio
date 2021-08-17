@@ -80,17 +80,19 @@
             <h1>Contact Me</h1>
             <p id="requiredP">*Required</p>
             <form method="post" id="contactForm">
+                <label class="standard label" for="contactName">Name: </label>
+                <br>
+                <input type="text" id="contactName" placeholder="Name">
+                <br>
                 <label class="standard-label" for="contactEmail">*E-mail: </label>
+                <br>
                 <input type="email" id="contactEmail" placeholder="your@email.com" required>
                 <br>
-                <label class="standard label" for="contactPhone">Phone Number: </label>
-                <input type="tel" id="contactPhone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx">
-                <br>
                 <label class="standard label" for="contactMessage">*Message (Max 240 Characters): </label>
-                    
+                <br>                   
                 <textarea maxlength="240" id="contactMessage" required></textarea>
-                    
-                <input type="submit" value="Send message">
+                <br>    
+                <input type="submit" value="Submit">
                     
             </form>
         </section>

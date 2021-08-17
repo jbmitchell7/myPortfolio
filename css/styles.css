@@ -180,6 +180,23 @@ h1 {
     padding-left: 40px;
 }
 
+input[type=text], input[type=email], #contactMessage {
+    padding:5px; 
+    border:2px solid var(--secondary-color);
+    border-radius: 5px;
+    color: var(--blue);
+}
+
+input[type=submit] {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--blue);
+  margin-top: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
 .button {
     border: none;
     display: inline-block;
