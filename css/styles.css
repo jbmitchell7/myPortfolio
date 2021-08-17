@@ -21,14 +21,6 @@ html {
     height: 100%;
 }
 
-body {
-    font-family: var(--font-primary);
-    font-weight: 400;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     font-family: var(--font-header);
     line-height: 75px;
@@ -43,6 +35,8 @@ h1 {
     display: flex;
     width: 100%;
     padding: 0px;
+    position: fixed;
+    top: 0;
 }
 
 .page-header__item {
@@ -90,6 +84,16 @@ h1 {
     padding-bottom: 30px;
 }
 
+.profile {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 175px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -111,26 +115,6 @@ h1 {
 .aboutMe__item:last-child {
     flex: 1 1 auto;
     margin-top: 40px;
-}
-
-.button {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    background-color: var(--primary-color);
-    color: var(--blue);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    margin-left: 20px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: 0.2s opacity;
-}
-
-button:hover, button:focus, .button:hover, .button:focus {
-    cursor: pointer;
-    opacity: 0.8;
 }
 
 .grid__item {
@@ -157,24 +141,18 @@ button:hover, button:focus, .button:hover, .button:focus {
         color: white;
         border-radius: 20px;
     }
+ 
+    .grid__item:first-child {
+        grid-column: 1 / -1;
+    }
 }
 
 .work-item {
     color: var(--primary-color);
 }
 
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-.introduction {
-    font-size: 15px;
-}
-
 #portrait {
-    width: 250px;
+    width: 400px;
     border-radius: 50%;
     margin: auto;
 }
@@ -202,40 +180,49 @@ button:hover, button:focus, .button:hover, .button:focus {
     padding-left: 40px;
 }
 
+.button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    color: var(--blue);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 20px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 a {
     color: var(--blue);
     text-decoration: none;
 }
-/* 
-a:visited {
-    /* color: var(--blue-grotto); */
-/*} */
 
 a:hover, a:focus {
-    /*underlining when hovering*/
-    text-decoration: underline;
+    opacity: 0.8;
 }
 
 a:active {
     color: var(--blue);
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
 
-    .grid {
-        -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    #portrait {
+        width: 250px;
+        border-radius: 50%;
+        margin: auto;
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-        -ms-grid-columns: 1fr 20px 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media all and (max-width: 875px) {
+@media all and (max-width: 750px) {
 
     .main-navigation {
         padding: 0;
@@ -245,11 +232,7 @@ a:active {
     .navigation-list {
         margin: 0;
         padding: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
     }
 
@@ -262,29 +245,12 @@ a:active {
         margin: 0;
     }
 
-    .grid {
-        grid-gap: 10px;
-    }
-
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-
     .page-header {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        position: fixed;
     }
 
     .page-header__item {
-        -webkit-box-flex: 0;
-        -ms-flex: 0;
         flex: 0;
     }
 
@@ -293,6 +259,16 @@ a:active {
         min-height: 0px;
         max-height: 100px;
         max-width: 200px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
     }
 }
 
