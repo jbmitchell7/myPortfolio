@@ -85,18 +85,22 @@ h1 {
 }
 
 .profile {
-    max-width: 900px;
     margin: 0 auto;
     margin-top: 175px;
-    display: flex;
-    flex-direction: column;
     font-family: var(--font-primary);
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section {
     display: flex;
     flex-direction: column;
+}
+
+#aboutMe {
+    max-width: 700px;
     margin: 20px;
     padding: 40px;
     padding-top: 20px;
@@ -107,13 +111,10 @@ h1 {
 }
 
 .aboutMe__item {
-    margin: 0;
-    justify-content: flex-end;
-
+    margin: auto;
 }
 
 .aboutMe__item:last-child {
-    flex: 1 1 auto;
     margin-top: 40px;
 }
 
@@ -129,6 +130,7 @@ h1 {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         margin: 30px;
+        width: 80%;
     }
 
     .grid__item {
@@ -159,11 +161,12 @@ h1 {
 
 #contactMe {
     text-align: left;
-
-}
-
-#contactForm {
-    padding-left: 40px;
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px 40px;
+    background-color: var(--blue-grotto);
+    border-radius: 20px;
+    color: white;
 }
 
 #contactEmail, #contactPhone {
@@ -177,7 +180,6 @@ h1 {
 
 #requiredP {
     font-style: italic;
-    padding-left: 40px;
 }
 
 input[type=text], input[type=email], #contactMessage {
@@ -185,6 +187,11 @@ input[type=text], input[type=email], #contactMessage {
     border:2px solid var(--secondary-color);
     border-radius: 5px;
     color: var(--blue);
+    width: 100%;
+}
+
+#contactMessage {
+    height: 150px;
 }
 
 input[type=submit] {
