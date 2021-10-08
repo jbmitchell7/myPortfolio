@@ -126,7 +126,7 @@ h1 {
 }
 
 .work-item:hover {
-    opacity: 80%;;
+    opacity: 80%;
 }
 
 .work-header {
@@ -197,10 +197,6 @@ input[type=submit]:hover {
 
 a {
     text-decoration: none;
-}
-
-a:hover {
-    opacity: 80%;
 }
 
 @media all and (max-width: 600px) {
