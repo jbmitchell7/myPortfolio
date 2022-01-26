@@ -1,19 +1,17 @@
-import './App.css';
+import './App.scss';
 import { projects } from "./projects";
+import Navigation from './components/Navigation/Navigation';
+import Project from "./components/Project/Project";
 
 const App = () => {
   return (
-    <div className="App">
-      {projects.map((data, key) => {
-        return (
-          <div key={key}>
-            <h3>{data.title}</h3>
-            <img src={data.screenshot} alt="" className='project-screenshot' /> <br />
-            <a href={data.github}>Github Source</a><br />
-            <a href={data.projectURL}>See Project</a>
-          </div>
-        );
-      })}
+    <div className="app">
+      <Navigation />
+      <div>
+        {projects.map(project => (
+          <Project project={project} />
+        ))}
+      </div>
     </div>
   );
 };
