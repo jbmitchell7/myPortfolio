@@ -22,7 +22,7 @@ const Project = (props) => {
         </Card>
       </Button>
       <Modal show={show} onHide={handleClose} className='project-modal'>
-        <Modal.Header closeButton>
+        <Modal.Header closebutton>
           <Modal.Title>{project.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
