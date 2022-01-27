@@ -2,5 +2,28 @@
 
 #contact {
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
+}
+
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    width: 800px;
+    background-color: $darkblue;
+    padding: 30px;
+}
+
+.card-title {
+    margin-bottom: 70px;
+}
+
+.contact-btn {
+    background-color: $aqua;
+    border: none;
+    color: black;
+    margin: 10px;
 }
