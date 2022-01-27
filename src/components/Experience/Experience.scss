@@ -1,12 +1,6 @@
 @import "../../App";
 
 #experience {
-    display: flex;
     flex-direction: column;
-    height: 100vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: $gray;
-    color: $yellow;
+    justify-content: stretch;
 }

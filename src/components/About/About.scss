@@ -1,16 +1,11 @@
 @import "../../App";
 
 #about {
-    display: flex;
     flex-direction: column;
-    height: 100vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: $gray;
-    color: $yellow;
+    justify-content: stretch;
 }
 
 .introduction {
     max-width: 50%;
+    align-self: center;
 }

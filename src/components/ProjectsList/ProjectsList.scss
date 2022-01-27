@@ -3,4 +3,9 @@
 #projects {
     background-color: $gray;
     color: $yellow;
+    flex-direction: column;
+}
+
+.projects-list {
+    display: flex;
 }
