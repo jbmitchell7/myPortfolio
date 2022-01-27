@@ -21,7 +21,7 @@ const Home = () => (
     <div className="scroll-prompt">
       <p>Scroll Down</p>
       <svg className="mouse-svg" width="40" height="45">
-        <ellipse cx="25" cy="25" rx="14" ry="18" stroke="white" stroke-width="2" fill="none" />
+        <ellipse cx="25" cy="25" rx="14" ry="18" stroke="white" strokeWidth="2" fill="none" />
         <circle className="mouse-wheel" cx="25" cy="15" r="2" fill="white" />
       </svg>
     </div>
