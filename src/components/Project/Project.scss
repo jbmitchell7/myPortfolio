@@ -1,5 +1,24 @@
 @import "../../App";
 
+.project-card {
+    color: $red;
+}
+
+.project-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
 .project-screenshot {
     max-width: 500px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.project-button {
+    background-color: $aqua;
+    border: none;
+    margin-bottom: 10px;
+    width: fit-content;
+    align-self: center;
 }

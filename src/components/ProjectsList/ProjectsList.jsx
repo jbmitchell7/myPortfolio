@@ -4,12 +4,14 @@ import { projects } from '../../projects';
 import Project from '../Project/Project';
 import './ProjectsList.scss';
 
-const ProjectsList = () => (
-  <Col id="projects">
+const ProjectsList = () => {
+  return <>
     {projects.map(project => (
-      <Project project={project} />
+      <Col md={3} id="projects" key={project.title}>
+        <Project project={project} />
+      </Col>
     ))}
-  </Col>
-);
+  </>
+};
 
 export default ProjectsList;

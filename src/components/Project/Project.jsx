@@ -1,14 +1,18 @@
 import './Project.scss';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 const Project = (props) => {
   const { project } = props;
   return (
-    <div>
-      <h3>{project.title}</h3>
-      <img src={project.screenshot} alt="" className='project-screenshot' /> <br />
-      <a href={project.github}>Github Source</a><br />
-      <a href={project.projectURL}>See Project</a>
-    </div>
+    <Card className='project-card'>
+      <Card.Body className='project-card-body'>
+        <Card.Title>{project.title}</Card.Title>
+        <Card.Img src={project.screenshot} alt="" className='project-screenshot' />
+        <Button className='project-button' href={project.github} target="_blank">Github Source</Button>
+        <Button className='project-button' href={project.projectURL} target="_blank">See Project</Button>
+      </Card.Body>
+    </Card>
   )
 };
 

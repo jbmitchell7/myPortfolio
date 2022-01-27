@@ -25,7 +25,7 @@ const App = () => {
         <Row>
           <Skills />
         </Row>
-        <Row>
+        <Row className='projects-list'>
           <ProjectsList />
         </Row>
         <Row>

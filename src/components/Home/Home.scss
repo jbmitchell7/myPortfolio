@@ -5,13 +5,64 @@
     flex-direction: column;
     height: 100vh;
     text-align: center;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     background-color: $darkblue;
     color: $yellow;
 }
 
 #portrait {
-    max-width: 20%;
+    max-height: 30vh;
     border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.name-header {
+    font-family: $header-font;
+    font-weight: $header-weight;
+    margin-bottom: 50px;
+}
+
+.social-icons {
+    display: flex;
+    margin-bottom: 30px;
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+.icon {
+    transform: scale(1.5, 1.5);
+}
+
+.icon:hover {
+    transform: scale(1.7, 1.7);
+}
+
+.hire-btn {
+    background-color: $red;
+    border: none;
+    border-radius: 30px;
+}
+
+.hire-btn:hover {
+    background-color: $red;
+    transform: scale(1.1, 1.1);
+}
+
+.scroll-prompt {
+    margin-top: 150px;
+}
+
+@keyframes mouse-scroll {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(0, 15px);
+    }
+  }
+
+.mouse-wheel {
+    animation: 1s mouse-scroll infinite alternate linear;
 }

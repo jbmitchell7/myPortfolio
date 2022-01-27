@@ -3,3 +3,17 @@ $yellow: #FFD15C;
 $red: #FF4C60;
 $aqua: #44D7B6;
 $gray: #7C90A0;
+$main-font: 'Work Sans', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+$header-weight: 900;
+
+.app {
+    font-family: $main-font;
+    font-weight: 300;
+}
+
+.projects-list {
+    background-color: $gray;
+    padding: 300px;
+    align-self: center;
+}
