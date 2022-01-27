@@ -4,7 +4,6 @@ import Navigation from './components/Navigation/Navigation';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Experience from './components/Experience/Experience';
-import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import ProjectsList from './components/ProjectsList/ProjectsList';
 
@@ -21,9 +20,6 @@ const App = () => {
         </Row>
         <Row>
           <Experience />
-        </Row>
-        <Row>
-          <Skills />
         </Row>
         <Row>
           <ProjectsList />

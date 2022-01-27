@@ -2,10 +2,29 @@
 
 #about {
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
+    padding-bottom: 0;
 }
 
 .introduction {
+    padding-top: 50px;
     max-width: 50%;
     align-self: center;
+}
+
+@media (max-width : 850px) {
+    .introduction {
+        max-width: 80vw;
+    }
+}
+
+.skills-icons {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    max-height: 40px;
+    margin: 20px;
 }
