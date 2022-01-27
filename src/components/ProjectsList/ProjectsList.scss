@@ -4,8 +4,10 @@
     background-color: $gray;
     color: $yellow;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 .projects-list {
     display: flex;
+    margin-top: 50px;
 }
