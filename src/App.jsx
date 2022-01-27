@@ -1,18 +1,38 @@
 import './App.scss';
-import { projects } from "./projects";
+import { Container, Row } from 'react-bootstrap';
 import Navigation from './components/Navigation/Navigation';
-import Project from "./components/Project/Project";
+import About from './components/About/About';
+import Home from './components/Home/Home';
+import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
+import Contact from './components/Contact/Contact';
+import ProjectsList from './components/ProjectsList/ProjectsList';
 
 const App = () => {
   return (
-    <div className="app">
+    <>
       <Navigation />
-      <div>
-        {projects.map(project => (
-          <Project project={project} />
-        ))}
-      </div>
-    </div>
+      <Container fluid className="app">
+        <Row>
+          <Home />
+        </Row>
+        <Row>
+          <About />
+        </Row>
+        <Row>
+          <Experience />
+        </Row>
+        <Row>
+          <Skills />
+        </Row>
+        <Row>
+          <ProjectsList />
+        </Row>
+        <Row>
+          <Contact />
+        </Row>
+      </Container>
+    </>
   );
 };
 

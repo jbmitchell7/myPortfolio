@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import './Navigation.scss';
 
 const Navigation = () => (
-  <Navbar className="color-nav" collapseOnSelect expand="md" variant="light" sticky="top">
+  <Navbar className="color-nav" collapseOnSelect expand="md" variant="dark" sticky="top">
     <Container>
       <Navbar.Brand href="#home">
         <img src="img/logo.png" className='logo' alt="logo" />
@@ -11,15 +11,12 @@ const Navigation = () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#features">About</Nav.Link>
-          <Nav.Link href="#pricing">Contact</Nav.Link>
-          <NavDropdown title="Projects" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Pokedex</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">JakesMovieDB React</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Meetups</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.4">Yakker</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.5">JakesMovieDB Angular</NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#experience">Experience</Nav.Link>
+          <Nav.Link href="#skills">Skills</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
