@@ -7,13 +7,13 @@ const Home = () => (
     <img src="img/jakesportrait.jpg" alt="Jake Mitchell Portrait" id="portrait" />
     <h1 className='name-header'>Jake Mitchell</h1>
     <div className="social-icons">
-      <a className="icon" href="https://github.com/jbmitchell7" target="_blank">
+      <a className="icon" href="https://github.com/jbmitchell7" target="_blank" rel='noreferrer'>
         <img src="img/github.svg" alt="Github Logo" />
       </a>
-      <a className="icon" href="https://twitter.com/Coffee7Black" target="_blank">
+      <a className="icon" href="https://twitter.com/Coffee7Black" target="_blank" rel='noreferrer'>
         <img src="img/twitter.svg" alt="Twitter Logo" />
       </a>
-      <a className="icon" href="#" target="_blank">
+      <a className="icon" href="linkedin.com" target="_blank" rel='noreferrer'>
         <img src="img/linkedin.svg" alt="LinkedIn Logo" />
       </a>
     </div>
