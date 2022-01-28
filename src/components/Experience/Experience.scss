@@ -4,3 +4,13 @@
     flex-direction: column;
     justify-content: stretch;
 }
+
+.experience-container {
+    margin-top: 50px;
+    max-width: 60vw;
+}
+
+.experience-card {
+    background-color: $red;
+    color: white;
+}
