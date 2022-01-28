@@ -4,6 +4,8 @@
     color: $darkblue;
     width: 300px;
     height: 330px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .project-card-body {
@@ -16,33 +18,49 @@
 }
 
 .project-screenshot {
-    max-width: 500px;
-    align-self: center;
-    margin-bottom: 10px;
-}
-
-.project-button {
-    background-color: $aqua;
-    border: none;
-    margin-bottom: 10px;
-    width: fit-content;
-    align-self: center;
-    color: black;
-}
-
-.project-modal {
+    max-height: 250px;
+    max-width: 275px;
     width: auto;
-    height: 60vh;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 .open-modal-btn, .open-modal-btn:hover, 
-.open-modal-btn:active, .open-modal-btn:focus,
-.open-modal-btn:visited {
+.open-modal-btn:active, .open-modal-btn:focus {
     background-color: $gray;
     border: none;
     outline: none;
 }
 
 .open-modal-btn:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.03, 1.03);
 }
+
+.project-modal {
+    width: 65vw;
+    max-width: 65vw;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-screenshot {
+    max-width: 40vw;
+    height: auto;
+    max-height: 60vh;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal-button {
+    background-color: $aqua;
+    border: none;
+    color: black;
+}
+

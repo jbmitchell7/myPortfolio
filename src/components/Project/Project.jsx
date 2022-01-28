@@ -1,7 +1,5 @@
 import './Project.scss';
-import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
 
@@ -21,14 +19,23 @@ const Project = (props) => {
           </Card.Body>
         </Card>
       </Button>
-      <Modal show={show} onHide={handleClose} className='project-modal'>
-        <Modal.Header closebutton>
+      <Modal show={show} onHide={handleClose} dialogClassName='project-modal' centered>
+        <Modal.Header closeButton>
           <Modal.Title>{project.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={project.screenshot} alt="project-screenshot" />
-          <Button className='project-button' href={project.github} target="_blank">Github Source</Button>
-          <Button className='project-button' href={project.projectURL} target="_blank">See Project</Button>
+          <Container>
+            <Row>
+              <Col xxl={8}>
+                <img src={project.screenshot} alt="project-screenshot" className="modal-screenshot" />
+              </Col>
+              <Col className="modal-info">
+                <h4>{project.description}</h4>
+                <Button className='modal-button' href={project.github} target="_blank">Github Source</Button>
+                <Button className='modal-button' href={project.projectURL} target="_blank">See Project</Button>
+              </Col>
+            </Row>
+          </Container>
         </Modal.Body>
       </Modal>
     </>

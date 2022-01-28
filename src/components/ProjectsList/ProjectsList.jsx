@@ -14,7 +14,7 @@ const ProjectsList = () => {
       <Container className='projects-list'>
         <Row>
           {projects.map(project => (
-            <Col md={3} key={project.title}>
+            <Col xxl={4} lg={6} key={project.title}>
               <Project project={project} />
             </Col>
           ))}
