@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 850px) {
+    .project-modal {
+        width: 90vw;
+        max-width: 90vw;
+    }
     .modal-button, .project-description {
         margin-top: 10px;
     }
