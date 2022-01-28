@@ -39,14 +39,13 @@
     transform: scale(1.7, 1.7);
 }
 
-.hire-btn {
+.hire-btn, .hire-btn:active, .hire-btn:hover, .hire-btn:focus {
     background-color: $red;
     border: none;
     border-radius: 30px;
 }
 
 .hire-btn:hover {
-    background-color: $red;
     transform: scale(1.1, 1.1);
 }
 
