@@ -11,7 +11,7 @@ export const projects = [
         "description": "This is a full-stack ReactJS application that accesses a custom built API and displays data on movies. It is built on the MERN stack and allows users to create an account and add and remove movies to their favorites.",
         "screenshot": "img/projects/myflix.png",
         "github": "https://github.com/jbmitchell7/myFlix",
-        "projectURL": "https://jakesmoviedb.netlify.app"
+        "projectURL": "https://jakemitchell.cloud/myFlix-client"
     },
     {
         "title": "Meetups",
