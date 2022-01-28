@@ -31,7 +31,7 @@ const Experience = () => (
           </Card>
         </Col>
         <Col xs={10}>
-          <Button className="resume-btn">
+          <Button className="resume-btn" href="resume.pdf" download="resume">
             Download Full Resume
           </Button>
         </Col>
