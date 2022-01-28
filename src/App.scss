@@ -17,7 +17,11 @@ $header-weight: 900;
     background-color: $gray;
     color: $yellow;
     //top and bottom 200 r/l 150
-    padding: 20vh 10vw;
+    padding: 20vh 10vw 0vh;
+}
+
+.section:last-child {
+    padding-bottom: 25vh;
 }
 
 .section-header {

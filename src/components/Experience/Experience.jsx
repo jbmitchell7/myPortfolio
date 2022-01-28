@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col, Button } from 'react-bootstrap';
 import { education, work } from '../../experience';
 import './Experience.scss';
 
@@ -8,19 +8,32 @@ const Experience = () => (
     <h1 className='section-header'>Experience</h1>
     <Container className='experience-container'>
       <Row>
-        <Col>
+        <Col xl={6}>
           <Card className="experience-card">
-            <Card.Body>
-              <h4>{education[0].location}</h4>
-            </Card.Body>
+            {education.map(e => (
+              <Card.Body key={e.location}>
+                <h4>{e.location}</h4>
+                <p>{e.dates}</p>
+                <p>{e.diploma}</p>
+              </Card.Body>
+            ))}
           </Card>
         </Col>
-        <Col>
+        <Col xl={6}>
           <Card className="experience-card">
-            <Card.Body>
-              <h4>{work[0].title}</h4>
-            </Card.Body>
+            {work.map(w => (
+              <Card.Body key={w.title}>
+                <h4>{w.title}</h4>
+                <p>{w.dates}</p>
+                <p>{w.description}</p>
+              </Card.Body>
+            ))}
           </Card>
+        </Col>
+        <Col xs={10}>
+          <Button className="resume-btn">
+            Download Full Resume
+          </Button>
         </Col>
       </Row>
     </Container>

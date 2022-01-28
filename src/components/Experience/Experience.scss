@@ -2,7 +2,6 @@
 
 #experience {
     flex-direction: column;
-    justify-content: stretch;
 }
 
 .experience-container {
@@ -13,4 +12,12 @@
 .experience-card {
     background-color: $red;
     color: white;
+    height: 40vh;
+    margin-bottom: 20px;
+}
+
+.resume-btn, .resume-btn:active, .resume-btn:hover, .resume-btn:focus {
+    background-color: $aqua;
+    color: black;
+    border: none;
 }

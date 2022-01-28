@@ -20,7 +20,7 @@ export const work = [
         "description": "Primary IT Manager for 4 different clients"
     },
     {
-        "title": "IT Specialist",
+        "title": "IT Intern",
         "dates": "June 2016-May 2017",
         "description": "Performed Help-Desk duties such as Office 365 administration and hardware setup while in college."
     }

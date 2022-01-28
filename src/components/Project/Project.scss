@@ -58,9 +58,11 @@
     flex-wrap: wrap;
 }
 
-.modal-button {
+.modal-button, .modal-button:hover, 
+.modal-button:active, .modal-button:focus {
     background-color: $aqua;
     border: none;
+    outline: none;
     color: black;
 }
 
