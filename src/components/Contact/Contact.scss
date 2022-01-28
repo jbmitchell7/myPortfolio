@@ -21,7 +21,7 @@
     margin-bottom: 70px;
 }
 
-.contact-btn {
+.contact-btn, .contact-btn:active, .contact-btn:hover, .contact-btn:focus {
     background-color: $aqua;
     border: none;
     color: black;
