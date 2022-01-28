@@ -30,7 +30,7 @@ const Project = (props) => {
                 <img src={project.screenshot} alt="project-screenshot" className="modal-screenshot" />
               </Col>
               <Col className="modal-info">
-                <h4>{project.description}</h4>
+                <h4 className='project-description'>{project.description}</h4>
                 <Button className='modal-button' href={project.github} target="_blank">Github Source</Button>
                 <Button className='modal-button' href={project.projectURL} target="_blank">See Project</Button>
               </Col>

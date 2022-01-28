@@ -8,6 +8,13 @@
     margin-bottom: 25px;
 }
 
+@media (max-width: 850px) {
+    .project-card {
+        width: 80vw;
+        max-height: 45vh;
+    }
+}
+
 .project-card-body {
     display: flex;
     flex-direction: column;
@@ -66,3 +73,11 @@
     color: black;
 }
 
+@media (max-width: 850px) {
+    .modal-button, .project-description {
+        margin-top: 10px;
+    }
+    .modal-screenshot {
+        max-width: 100%;
+    }
+}

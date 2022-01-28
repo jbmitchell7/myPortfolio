@@ -20,6 +20,12 @@ $header-weight: 900;
     padding: 20vh 10vw 0vh;
 }
 
+@media (max-width: 850px) {
+    .section {
+        padding-left: 5vw;
+    }
+}
+
 .section:last-child {
     padding-bottom: 25vh;
 }

@@ -1,12 +1,16 @@
 @import "../../App";
 
 #projects {
-    background-color: $gray;
-    color: $yellow;
     flex-direction: column;
-    padding-bottom: 0;
 }
 
 .projects-list {
     margin-top: 50px;
+    max-width: 60vw;
+}
+
+@media (max-width: 850px) {
+    .projects-list {
+        max-width: 90vw;
+    }
 }
