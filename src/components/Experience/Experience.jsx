@@ -10,6 +10,7 @@ const Experience = () => (
       <Row>
         <Col xl={6}>
           <Card className="experience-card">
+            <h2 className='experience-title'>Education</h2>
             {education.map(e => (
               <Card.Body key={e.location}>
                 <h4>{e.location}</h4>
@@ -21,6 +22,7 @@ const Experience = () => (
         </Col>
         <Col xl={6}>
           <Card className="experience-card">
+            <h2 className='experience-title'>Work</h2>
             {work.map(w => (
               <Card.Body key={w.title}>
                 <h4>{w.title}</h4>
