@@ -13,7 +13,7 @@ const Home = () => (
       <a className="icon" href="https://twitter.com/Coffee7Black" target="_blank" rel='noreferrer'>
         <img src="img/logos/twitter.svg" alt="Twitter Logo" />
       </a>
-      <a className="icon" href="linkedin.com" target="_blank" rel='noreferrer'>
+      <a className="icon" href="https://www.linkedin.com/in/jbmitchell7/" target="_blank" rel='noreferrer'>
         <img src="img/logos/linkedin.svg" alt="LinkedIn Logo" />
       </a>
     </div>
