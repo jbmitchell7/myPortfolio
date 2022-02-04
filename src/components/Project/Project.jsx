@@ -26,8 +26,8 @@ const Project = (props) => {
         <Modal.Body>
           <Container>
             <Row>
-              <Col xxl={8}>
-                <img src={project.screenshot} alt="project-screenshot" className="modal-screenshot" />
+              <Col xxl={8} className="m-auto">
+                <img src={project.screenshot} alt="project-screenshot" className="d-block modal-screenshot mx-auto" />
               </Col>
               <Col className="modal-info">
                 <h4 className='project-description'>{project.description}</h4>

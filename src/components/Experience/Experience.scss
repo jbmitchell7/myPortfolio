@@ -21,6 +21,10 @@
     padding: 10px;
 }
 
+.experience-item {
+    margin-top: -10px;
+}
+
 @media (max-width: 850px) {
     .experience-container {
         max-width: 100vw;
@@ -28,10 +32,4 @@
     .experience-card {
         height: fit-content;
     }
-}
-
-.resume-btn, .resume-btn:active, .resume-btn:hover, .resume-btn:focus {
-    background-color: $aqua;
-    color: black;
-    border: none;
 }
