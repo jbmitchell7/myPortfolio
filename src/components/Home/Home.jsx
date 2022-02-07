@@ -19,7 +19,7 @@ const Home = () => (
       </a>
     </div>
     <Button className="hire-btn" size="lg" href="#contact">Hire Me</Button>
-    <div className="scroll-prompt">
+    <div className="scroll-prompt">git
       <p>Scroll Down</p>
       <svg className="mouse-svg" width="40" height="45">
         <ellipse cx="25" cy="25" rx="14" ry="18" stroke="white" strokeWidth="2" fill="none" />
