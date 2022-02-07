@@ -14,7 +14,7 @@ const Home = () => (
       <a className="icon" href="https://github.com/jbmitchell7" target="_blank" rel='noreferrer'>
         <img src="img/logos/github.svg" alt="Github Logo" />
       </a>
-      <a className="icon" href="linkedin.com" target="_blank" rel='noreferrer'>
+      <a className="icon" href="https://www.linkedin.com/in/jbmitchell7/" target="_blank" rel='noreferrer'>
         <img src="img/logos/linkedin.svg" alt="LinkedIn Logo" />
       </a>
     </div>

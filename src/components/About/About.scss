@@ -28,3 +28,10 @@
     max-height: 40px;
     margin: 20px;
 }
+
+.resume-btn, .resume-btn:active, .resume-btn:hover, .resume-btn:focus {
+    margin-top: 50px;
+    background-color: $aqua;
+    color: black;
+    border: none;
+}

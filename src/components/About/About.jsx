@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.scss';
 import { skills } from '../../skills';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const About = () => (
   <div id="about" className='section'>
@@ -18,6 +18,11 @@ const About = () => (
             <img src={skill.logo} className="icon" alt="skill-logo" />
           </Col>
         ))}
+        <Col xs={10}>
+            <Button className="resume-btn" href="resume.pdf" download="resume">
+                Download Full Resume
+            </Button>
+        </Col>
       </Row>
     </Container>
   </div>

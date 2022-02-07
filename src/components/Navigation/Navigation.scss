@@ -5,9 +5,24 @@
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 150px;
+}
+
+@media (max-width: 750px) {
+    .logo {
+        max-width: 100px;
+    }
 }
 
 .links {
-    font-family: $main-font;
+    font-family: $header-font;
+    font-weight: $header-weight;
+}
+
+.link-item {
+    color: white;
+}
+
+.link-item:hover {
+    transform: scale(1.1);
 }
