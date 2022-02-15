@@ -16,7 +16,7 @@ export const projects = [
     {
         "title": "JakesMovieDB React",
         "description": "This is a full-stack ReactJS application that accesses a custom built REST API and displays data on movies. It is built on the MERN stack and allows users to create an account and add and remove movies to their favorites.",
-        "screenshot": "img/projects/myflix.png",
+        "screenshot": "img/projects/myflix.PNG",
         "github": "https://github.com/jbmitchell7/myFlix-client",
         "projectURL": "https://www.jakemitchell.cloud/myFlix-client"
     },

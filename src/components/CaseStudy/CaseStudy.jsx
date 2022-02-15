@@ -4,13 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const CaseStudy = () => (
   <div id="caseStudy" className='section'>
-    <h1 className='section-header'>Case Study</h1>
+    <h1 className='section-header'>Case Study: JakesMovieDB</h1>
     <Container className='case-study-container'>
       <Row>
-        <Col xxl={4}>
+        <Col xxl={6} xl={12} className='case-study-col'>
           <h4>Project Overview</h4>
           <p>
-            myFlix is a web app developed on the MERN
+            JakesMovieDB is a web app developed on the MERN
             Stack that shows data about movies. It allows
             users to register for an account and search
             through the list of movies for info on the
@@ -19,7 +19,7 @@ const CaseStudy = () => (
           </p>
           <h4>Tools, Skills, and Methodologies</h4>
           <p>
-            myFlix was developed as part of my Full Stack
+            JakesMovieDB was developed as part of my Full Stack
             course with CareerFoundry . The goal of this
             project was to build how a full front end and
             back end of a project completely from scratch.
@@ -50,8 +50,15 @@ const CaseStudy = () => (
             </li>
           </ul>
         </Col>
-        <Col xxl={4}>
-          <img src="img/projects/myflix.png" alt="project screenshot" className='case-study-img' />
+        <Col>
+          <img src="img/projects/login.PNG" alt="project screenshot" className='case-study-img' />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <img src="img/projects/myflix.PNG" alt="project screenshot" className='case-study-img' />
+        </Col>
+        <Col xxl={6} xl={12} className='case-study-col'>
           <h4>Challenges and Goals</h4>
           <ul>
             <h5>What Went Well</h5>
@@ -90,6 +97,10 @@ const CaseStudy = () => (
               were partially tied to the API setup mentioned above
             </li>
           </ul>
+        </Col>
+      </Row>
+      <Row>
+        <Col xxl={6} xl={12} className='case-study-col'>
           <h4>Conclusions</h4>
           <ul>
             <li>
@@ -106,6 +117,9 @@ const CaseStudy = () => (
               movie information.
             </li>
           </ul>
+        </Col>
+        <Col>
+          <img src="img/projects/profile.PNG" alt="project screenshot" className='case-study-img' />
         </Col>
       </Row>
     </Container>
