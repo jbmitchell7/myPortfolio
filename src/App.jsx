@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact/Contact';
 import ProjectsList from './components/ProjectsList/ProjectsList';
+import CaseStudy from './components/CaseStudy/CaseStudy';
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
         </Row>
         <Row>
           <ProjectsList />
+        </Row>
+        <Row>
+          <CaseStudy />
         </Row>
         <Row>
           <Contact />
