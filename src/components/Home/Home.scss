@@ -43,6 +43,7 @@
     background-color: $red;
     border: none;
     border-radius: 30px;
+    font-weight: 300;
 }
 
 .hire-btn:hover {
@@ -65,4 +66,19 @@
 
 .mouse-wheel {
     animation: 1s mouse-scroll infinite alternate linear;
+}
+
+@media (max-height: 800px) {
+    .name-header {
+        margin-bottom: 20px;
+    }
+    #portrait {
+        max-height: 30vh;
+        border-radius: 50%;
+        margin-top: -150px;
+        margin-bottom: 30px;
+    }
+    .social-icons {
+        margin-bottom: 15px;
+    }
 }
