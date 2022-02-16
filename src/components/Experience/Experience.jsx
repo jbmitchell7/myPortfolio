@@ -10,24 +10,24 @@ const Experience = () => (
       <Row>
         <Col xxl={6}>
           <Card className="experience-card">
-            <h2 className='experience-title'>Education</h2>
+            <h3 className='experience-title'>Education</h3>
             {education.map(e => (
-            <Card.Body key={e.location} className="experience-item">
-                <h3>{e.location}</h3>
-                <h5>{e.dates}</h5>
-                <h5>{e.diploma}</h5>
+              <Card.Body key={e.location} className="experience-item">
+                <h4>{e.location}</h4>
+                <p>{e.dates}</p>
+                <p>{e.diploma}</p>
               </Card.Body>
             ))}
           </Card>
         </Col>
         <Col xxl={6}>
           <Card className="experience-card">
-            <h2 className='experience-title'>Work</h2>
+            <h3 className='experience-title'>Work</h3>
             {work.map(w => (
               <Card.Body key={w.title} className="experience-item">
-                <h3>{w.title}</h3>
-                <h5>{w.dates}</h5>
-                <h5>{w.description}</h5>
+                <h4>{w.title}</h4>
+                <p>{w.dates}</p>
+                <p>{w.description}</p>
               </Card.Body>
             ))}
           </Card>
