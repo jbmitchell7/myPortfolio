@@ -5,6 +5,10 @@
     font-weight: 300;
 }
 
+.first-card {
+    margin-bottom: 20px;
+}
+
 .experience-container {
     margin-top: 50px;
     max-width: 60vw;
@@ -13,8 +17,7 @@
 .experience-card {
     background-color: $red;
     color: white;
-    height: 40vh;
-    margin-bottom: 20px;
+    height: 100%;
 }
 
 .experience-title {
