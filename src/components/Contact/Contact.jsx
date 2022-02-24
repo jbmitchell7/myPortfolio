@@ -17,7 +17,7 @@ const Contact = () => (
           </h4>
           <Button className='contact-btn' href="mailto:jbmitchell747@gmail.com">Email Me!</Button>
           <Button className='contact-btn' href="https://github.com/jbmitchell7" target="_blank">My Github Profile</Button>
-          <Button className='contact-btn' href="https://www.linkedin.com/in/jbmitchell7/" target="_blank">Connect with Me on LinkedIn</Button>
+          <Button className='contact-btn' href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">Connect with Me on LinkedIn</Button>
         </Card.Body>
       </Card>
     </div>
