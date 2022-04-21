@@ -8,10 +8,10 @@ export const projects = [
     },
     {
         "title": "Flickbase",
-        "description": "Flickbase is a front end for themoviedb.org API. It includes the ability to log in to existing TMDB accounts, as well as creating and updating a watchlist unique to the flickbase app. Users can search for movies, tv shows, and people in the film and television industry.",
+        "description": "Flickbase is a front end for themoviedb.org API and is currently in early access on the Google Play Store. It includes the ability to log in to existing TMDB accounts, as well as creating and updating a watchlist unique to the flickbase app. Users can search for movies, tv shows, and people in the film and television industry.",
         "screenshot": "img/projects/flickbase.png",
         "github": "https://github.com/jbmitchell7/flickbase",
-        "projectURL": "https://github.com/jbmitchell7/flickbase"
+        "projectURL": "https://play.google.com/store/apps/details?id=cloud.jakemitchell.flickbase"
     },
     {
         "title": "Yakker",
