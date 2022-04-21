@@ -3,8 +3,8 @@ export const projects = [
         "title": "Sleeper Fantasy Focus",
         "description": "This is an Angular website that uses the Sleeper App API to display standings and a bubble chart from ng2-charts to show you live info on your favorite Sleeper fantasy league. If you have a league ID enter it in the field, if not feel free to use 725424222041657344 as an example.",
         "screenshot": "img/projects/sff.png",
-        "github": "https://github.com/jbmitchell7/sleeperstats",
-        "projectURL": "https://www.jakemitchell.cloud/sleeperstats"
+        "github": "https://github.com/jbmitchell7/sleeperfantasyfocus",
+        "projectURL": "https://www.jakemitchell.cloud/sleeperfantasyfocus"
     },
     {
         "title": "Flickbase",
