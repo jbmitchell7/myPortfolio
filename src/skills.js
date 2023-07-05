@@ -1,5 +1,13 @@
 export const skills = [
     {
+        "title": "angular",
+        "logo": "img/logos/angularlogo.png"
+    },
+    {
+        "title": "NGRX",
+        "logo": "img/logos/ngrx.svg"
+    },
+    {
         "title": "html",
         "logo": "img/logos/htmlogo.png"
     },
@@ -14,10 +22,6 @@ export const skills = [
     {
         "title": "react",
         "logo": "img/logos/reactlogo.png"
-    },
-    {
-        "title": "angular",
-        "logo": "img/logos/angularlogo.png"
     },
     {
         "title": "python",
