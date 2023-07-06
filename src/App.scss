@@ -1,35 +1,34 @@
 $darkblue: #353353;
-$yellow: #FFD15C;
-$red: #FF4C60;
-$aqua: #44D7B6;
-$gray: #7C90A0;
-$main-font: 'Work Sans', sans-serif;
-$header-font: 'Montserrat', sans-serif;
+$yellow: #ffd15c;
+$red: #ff4c60;
+$gray: #7c90a0;
+$main-font: "Work Sans", sans-serif;
+$header-font: "Montserrat", sans-serif;
 $header-weight: 900;
 
 .app {
-    font-family: $main-font;
-    font-weight: 300;
+  font-family: $main-font;
+  font-weight: 300;
 }
 
 .section {
-    display: flex;
-    background-color: $gray;
-    color: $yellow;
-    padding: 20vh 10vw 0vh;
+  display: flex;
+  background-color: $gray;
+  color: $yellow;
+  padding: 20vh 10vw 0vh;
 }
 
 @media (max-width: 850px) {
-    .section {
-        padding-left: 5vw;
-    }
+  .section {
+    padding-left: 5vw;
+  }
 }
 
 .section:last-child {
-    padding-bottom: 25vh;
+  padding-bottom: 25vh;
 }
 
 .section-header {
-    font-family: $header-font;
-    color: $yellow;
+  font-family: $header-font;
+  color: $yellow;
 }

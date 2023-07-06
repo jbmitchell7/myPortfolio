@@ -15,8 +15,13 @@ export const education = [
 
 export const work = [
     {
+        "title": "Software Developer",
+        "dates": "September 2023-Present",
+        "description": "Full Stack development on enterprise-level software primarily working in Angular"
+    },
+    {
         "title": "IT Specialist",
-        "dates": "June 2017-Present",
+        "dates": "June 2017-August 2022",
         "description": "Primary IT Manager for 4 different clients"
     },
     {

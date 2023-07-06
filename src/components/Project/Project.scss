@@ -1,5 +1,11 @@
 @import "../../App";
 
+.project {
+  background-color: $darkblue;
+  border-radius: 5px;
+  padding: 50px;
+}
+
 .screenshot {
   max-width: 40vw;
   height: auto;
@@ -9,20 +15,20 @@
 
 .project-info {
   display: flex;
-  justify-content: space-evenly;
-  align-items: start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-description {
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
+  color: white;
 }
 
 .link-button,
 .link-button:hover,
 .link-button:active,
 .link-button:focus {
-  background-color: $darkblue;
+  background-color: $red;
   border: none;
   outline: none;
   color: white;
@@ -33,6 +39,9 @@
 }
 
 @media (max-width: 850px) {
+  .project {
+    padding: 15px;
+  }
   .link-button,
   .project-description {
     margin-top: 10px;

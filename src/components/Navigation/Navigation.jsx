@@ -5,9 +5,9 @@ import './Navigation.scss';
 const Navigation = () => (
   <Navbar className="color-nav" collapseOnSelect expand="md" variant="dark" sticky="top">
     <Container>
-      <Navbar.Brand href="#home">
+      {/* <Navbar.Brand href="#home">
         <img src="img/logo.png" className='logo' alt="logo" />
-      </Navbar.Brand>
+      </Navbar.Brand> */}
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="links">

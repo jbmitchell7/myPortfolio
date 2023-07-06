@@ -1,38 +1,38 @@
 @import "../../App";
 
 #experience {
-    flex-direction: column;
-    font-weight: 300;
+  flex-direction: column;
+  font-weight: 300;
 }
 
 .first-card {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .experience-container {
-    margin-top: 50px;
-    max-width: 60vw;
+  margin-top: 50px;
+  max-width: 60vw;
 }
 
 .experience-card {
-    background-color: $red;
-    color: white;
-    height: 100%;
+  background-color: $darkblue;
+  color: white;
+  height: 100%;
 }
 
 .experience-title {
-    padding: 10px;
+  padding: 10px;
 }
 
 .experience-item {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 @media (max-width: 1050px) {
-    .experience-container {
-        max-width: 100vw;
-    }
-    .experience-card {
-        height: fit-content;
-    }
+  .experience-container {
+    max-width: 100vw;
+  }
+  .experience-card {
+    height: fit-content;
+  }
 }

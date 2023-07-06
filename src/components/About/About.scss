@@ -1,38 +1,53 @@
 @import "../../App";
 
 #about {
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.about-info {
+  background-color: $darkblue;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 50px;
+  border-radius: 5px;
+  max-width: 60vw;
 }
 
 .introduction {
-    padding-top: 50px;
-    max-width: 50%;
-    align-self: center;
-    color: white;
+  align-self: center;
+  color: white;
 }
 
-@media (max-width : 1050px) {
-    .introduction {
-        max-width: 80vw;
-    }
+@media (max-width: 1050px) {
+  .about-info {
+    padding: 10px;
+    max-width: 80vw;
+  }
 }
 
 .skills-icons {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
-    max-height: 40px;
-    margin: 20px;
+  max-height: 40px;
+  margin: 20px;
 }
 
-.resume-btn, .resume-btn:active, .resume-btn:hover, .resume-btn:focus {
-    margin-top: 50px;
-    background-color: $aqua;
-    color: black;
-    border: none;
+.resume-btn,
+.resume-btn:active,
+.resume-btn:hover,
+.resume-btn:focus {
+  margin-top: 50px;
+  background-color: $red;
+  color: white;
+  border: none;
+}
+
+.resume-btn:hover {
+  opacity: 0.8;
 }

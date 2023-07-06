@@ -5,7 +5,7 @@ const Project = (props) => {
   const { project } = props;
 
   return (
-    <Container className='mb-5'>
+    <Container className='mb-5 project'>
       <Row>
         <Col xxl={8} className="m-auto">
           <img src={project.screenshot} alt="project-screenshot" className="d-block screenshot mx-auto" />
@@ -18,9 +18,6 @@ const Project = (props) => {
             <Button className='link-button' href={project.projectURL} target="_blank">See Project</Button>
           </div>
         </Col>
-      </Row>
-      <Row className='mt-5'>
-        <Col className='border'></Col>
       </Row>
     </Container>
   )

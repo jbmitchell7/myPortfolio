@@ -1,29 +1,38 @@
 @import "../../App";
 
 #contact {
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-container {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 .contact-card {
-    width: 800px;
-    background-color: $darkblue;
-    padding: 30px;
+  width: 800px;
+  background-color: $darkblue;
+  padding: 30px;
 }
 
 .card-title {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
-.contact-btn, .contact-btn:active, .contact-btn:hover, .contact-btn:focus {
-    background-color: $aqua;
-    border: none;
-    color: black;
-    margin: 10px;
+.contact-btn,
+.contact-btn:active,
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: $red;
+  border: none;
+  margin: 10px;
+}
+
+@media (max-width: 850px) {
+  .contact-card {
+    padding: 12px;
+  }
 }
