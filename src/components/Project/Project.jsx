@@ -1,44 +1,28 @@
 import './Project.scss';
-import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
-import { useState } from 'react';
-
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const Project = (props) => {
   const { project } = props;
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Button onClick={handleShow} className="open-modal-btn">
-        <Card className='project-card'>
-          <Card.Body className='project-card-body'>
-            <h4 className='project-title'>{project.title}</h4>
-            <Card.Img src={project.screenshot} alt="" className='project-screenshot' />
-          </Card.Body>
-        </Card>
-      </Button>
-      <Modal show={show} onHide={handleClose} dialogClassName='project-modal' centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{project.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Container>
-            <Row>
-              <Col xxl={8} className="m-auto">
-                <img src={project.screenshot} alt="project-screenshot" className="d-block modal-screenshot mx-auto" />
-              </Col>
-              <Col className="modal-info">
-                <h5 className='project-description'>{project.description}</h5>
-                <Button className='modal-button' href={project.github} target="_blank">Github Source</Button>
-                <Button className='modal-button' href={project.projectURL} target="_blank">See Project</Button>
-              </Col>
-            </Row>
-          </Container>
-        </Modal.Body>
-      </Modal>
-    </>
+    <Container className='mb-5'>
+      <Row>
+        <Col xxl={8} className="m-auto">
+          <img src={project.screenshot} alt="project-screenshot" className="d-block screenshot mx-auto" />
+        </Col>
+        <Col className="project-info">
+          <h3>{project.title}</h3>
+          <h5 className='project-description'>{project.description}</h5>
+          <div className='d-flex justify-content-evenly w-100'>
+            <Button className='link-button' href={project.github} target="_blank">Github Source</Button>
+            <Button className='link-button' href={project.projectURL} target="_blank">See Project</Button>
+          </div>
+        </Col>
+      </Row>
+      <Row className='mt-5'>
+        <Col className='border'></Col>
+      </Row>
+    </Container>
   )
 };
 

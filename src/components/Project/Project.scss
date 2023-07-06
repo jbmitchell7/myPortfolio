@@ -1,97 +1,43 @@
 @import "../../App";
 
-.project-card {
-    color: $darkblue;
-    width: 300px;
-    height: 330px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.screenshot {
+  max-width: 40vw;
+  height: auto;
+  max-height: 60vh;
+  margin-bottom: 30px;
 }
 
-.project-card-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-title {
-    margin-bottom: 30px;
-    font-weight: 300;
-}
-
-.project-screenshot {
-    max-height: 250px;
-    max-width: 275px;
-    width: auto;
-    align-self: center;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 1000px) {
-    .project-card {
-        min-width: 60vw;
-        max-width: 80vw;
-        min-height: 38vh;
-    }
-    .project-screenshot {
-        max-width: 50vw;
-    }
-}
-
-.open-modal-btn, .open-modal-btn:hover, 
-.open-modal-btn:active, .open-modal-btn:focus {
-    background-color: $gray;
-    border: none;
-    outline: none;
-}
-
-.open-modal-btn:hover {
-    transform: scale(1.03, 1.03);
-}
-
-.project-modal {
-    width: 65vw;
-    max-width: 65vw;
-}
-
-.modal-header {
-    border: none;
-}
-
-.modal-screenshot {
-    max-width: 40vw;
-    height: auto;
-    max-height: 60vh;
-    margin-bottom: 30px;
-}
-
-.modal-info {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+.project-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
 .project-description {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.modal-button, .modal-button:hover, 
-.modal-button:active, .modal-button:focus {
-    background-color: $aqua;
-    border: none;
-    outline: none;
-    color: black;
+.link-button,
+.link-button:hover,
+.link-button:active,
+.link-button:focus {
+  background-color: $darkblue;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.link-button:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 850px) {
-    .project-modal {
-        width: 90vw;
-        max-width: 90vw;
-    }
-    .modal-button, .project-description {
-        margin-top: 10px;
-    }
-    .modal-screenshot {
-        max-width: 100%;
-    }
+  .link-button,
+  .project-description {
+    margin-top: 10px;
+  }
+  .screenshot {
+    max-width: 100%;
+  }
 }
