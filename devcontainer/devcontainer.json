@@ -1,0 +1,20 @@
+{
+	"name": "Portfolio",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"zhang-renyang.vscode-react",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
+				"bradlc.vscode-tailwindcss"
+			]
+		}
+	},
+	"remoteUser": "node"
+}
