@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.scss';
-import { skills } from '../../skills';
+import { skills } from '../../data/skills';
 
 const About = () => (
   <div id="about" className='section'>
@@ -34,8 +34,8 @@ const About = () => (
         </div>
       </div>
       <div>
-        <div xs={10}>
-          <button className="resume-btn" href="resume.pdf" download="resume">
+        <div>
+          <button className="resume-btn">
             Download Full Resume
           </button>
         </div>
