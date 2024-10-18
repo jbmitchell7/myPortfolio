@@ -12,7 +12,7 @@ const Project = (props) => {
         <div className="project-info">
           <h3>{project.title}</h3>
           <h5 className='project-description'>{project.description}</h5>
-          <div className='d-flex justify-content-evenly w-100'>
+          <div className='flex justify-evenly w-100'>
             <button className='link-button' href={project.github} target="_blank">Github Source</button>
             <button className='link-button' href={project.projectURL} target="_blank">See Project</button>
           </div>

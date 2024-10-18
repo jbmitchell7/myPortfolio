@@ -7,8 +7,8 @@ const About = () => (
     <h1 className='section-header'>About Me</h1>
     <div className='about-info'>
       <div>
-        <div className='d-flex justify-content-center w-100'>
-          <h5 className="introduction">
+        <div className='flex justify-center w-100'>
+          <h5 className="self-center">
             I am a Full-Stack Software Developer in the Minneapolis area looking to join your development team.
             I feel passionately about the importance of a clean, responsive, and easy-to-use application.
             I'll help you by bringing that passion to your next big project!
