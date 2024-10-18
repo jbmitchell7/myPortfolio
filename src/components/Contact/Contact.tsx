@@ -13,9 +13,9 @@ const Contact = () => (
             or anything in between; contact me in your preferred
             method below!
           </h4>
-          <button className='contact-btn' href="mailto:jbmitchell747@gmail.com">Email Me!</button>
-          <button className='contact-btn' href="https://github.com/jbmitchell7" target="_blank">My Github Profile</button>
-          <button className='contact-btn' href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">Connect with Me on LinkedIn</button>
+          <a className='contact-btn' href="mailto:jbmitchell747@gmail.com">Email Me!</a>
+          <a className='contact-btn' href="https://github.com/jbmitchell7" target="_blank">My Github Profile</a>
+          <a className='contact-btn' href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">Connect with Me on LinkedIn</a>
         </div>
       </div>
     </div>

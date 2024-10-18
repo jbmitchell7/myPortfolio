@@ -1,16 +1,1 @@
-@import "../../App";
 
-#projects {
-    flex-direction: column;
-}
-
-.projects-list {
-    margin-top: 50px;
-    max-width: 70vw;
-}
-
-@media (max-width: 1000px) {
-    .projects-list {
-        max-width: 90vw;
-    }
-}

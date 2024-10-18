@@ -1,21 +1,17 @@
 import React from 'react';
 import './Navigation.scss';
+import { AppBar, Toolbar } from '@mui/material';
 
 const Navigation = () => (
-  <div className="color-nav" collapseOnSelect expand="md" variant="dark" sticky="top">
-    <div>
-      <div aria-controls="responsive-navbar-nav" />
-      <div id="responsive-navbar-nav">
-        <div className="links">
-          <div href="#home" className="link-item">Home</div>
-          <div href="#about" className="link-item">About</div>
-          <div href="#experience" className="link-item">Experience</div>
-          <div href="#projects" className="link-item">Projects</div>
-          <div href="#contact" className="link-item">Contact</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <AppBar position="static">
+    <Toolbar className='flex gap-5'>
+      <a href="#home" className="text-xl">Home</a>
+      <a href="#about" className="text-xl">About</a>
+      <a href="#experience" className="text-xl">Experience</a>
+      <a href="#projects" className="text-xl">Projects</a>
+      <a href="#contact" className="text-xl">Contact</a>
+    </Toolbar>
+  </AppBar>
 );
 
 export default Navigation;
