@@ -1,22 +1,21 @@
 import React from 'react';
-import { Navbar, Nav, Container } from "react-bootstrap";
 import './Navigation.scss';
 
 const Navigation = () => (
-  <Navbar className="color-nav" collapseOnSelect expand="md" variant="dark" sticky="top">
-    <Container>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="links">
-          <Nav.Link href="#home" className="link-item">Home</Nav.Link>
-          <Nav.Link href="#about" className="link-item">About</Nav.Link>
-          <Nav.Link href="#experience" className="link-item">Experience</Nav.Link>
-          <Nav.Link href="#projects" className="link-item">Projects</Nav.Link>
-          <Nav.Link href="#contact" className="link-item">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
+  <div className="color-nav" collapseOnSelect expand="md" variant="dark" sticky="top">
+    <div>
+      <div aria-controls="responsive-navbar-nav" />
+      <div id="responsive-navbar-nav">
+        <div className="links">
+          <div href="#home" className="link-item">Home</div>
+          <div href="#about" className="link-item">About</div>
+          <div href="#experience" className="link-item">Experience</div>
+          <div href="#projects" className="link-item">Projects</div>
+          <div href="#contact" className="link-item">Contact</div>
+        </div>
+      </div>
+    </div>
+  </div>
 );
 
 export default Navigation;

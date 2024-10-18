@@ -1,6 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import { EnvelopeFill } from 'react-bootstrap-icons';
 import './Home.scss';
 
 const Home = () => (
@@ -9,7 +7,7 @@ const Home = () => (
     <h1 className='name-header'>Jake Mitchell</h1>
     <div className="social-icons">
       <a className="icon" href="mailto:jbmitchell747@gmail.com">
-        <EnvelopeFill color="black" size="25" />
+        <envelopeicon color="black" size="25" />
       </a>
       <a className="icon" href="https://github.com/jbmitchell7" target="_blank" rel='noreferrer'>
         <img src="img/logos/github.svg" alt="Github Logo" />
@@ -18,7 +16,7 @@ const Home = () => (
         <img src="img/logos/linkedin.svg" alt="LinkedIn Logo" />
       </a>
     </div>
-    <Button className="hire-btn" size="lg" href="#contact">Hire Me</Button>
+    <button className="hire-btn" size="lg" href="#contact">Hire Me</button>
     <div className="scroll-prompt">
       <p>Scroll Down</p>
       <svg className="mouse-svg" width="40" height="45">

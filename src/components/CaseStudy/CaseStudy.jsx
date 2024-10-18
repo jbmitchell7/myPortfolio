@@ -1,13 +1,12 @@
 import React from 'react';
 import './CaseStudy.scss';
-import { Container, Row, Col } from 'react-bootstrap';
 
 const CaseStudy = () => (
   <div id="caseStudy" className='section'>
     <h1 className='section-header'>Case Study: JakesMovieDB</h1>
-    <Container className='case-study-container'>
-      <Row>
-        <Col xxl={6} xl={12} className='case-study-col'>
+    <div className='case-study-container'>
+      <div>
+        <div xxl={6} xl={12} className='case-study-col'>
           <h4>Project Overview</h4>
           <p>
             JakesMovieDB is a web app developed on the MERN
@@ -49,16 +48,16 @@ const CaseStudy = () => (
               with the movie data
             </li>
           </ul>
-        </Col>
-        <Col>
+        </div>
+        <div>
           <img src="img/projects/login.PNG" alt="project screenshot" className='case-study-img' />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
+        </div>
+      </div>
+      <div>
+        <div>
           <img src="img/projects/myflix.PNG" alt="project screenshot" className='case-study-img' />
-        </Col>
-        <Col xxl={6} xl={12} className='case-study-col'>
+        </div>
+        <div xxl={6} xl={12} className='case-study-col'>
           <h4>Challenges and Goals</h4>
           <ul>
             <h5>What Went Well</h5>
@@ -97,10 +96,10 @@ const CaseStudy = () => (
               were partially tied to the API setup mentioned above
             </li>
           </ul>
-        </Col>
-      </Row>
-      <Row>
-        <Col xxl={6} xl={12} className='case-study-col'>
+        </div>
+      </div>
+      <div>
+        <div xxl={6} xl={12} className='case-study-col'>
           <h4>Conclusions</h4>
           <ul>
             <li>
@@ -117,12 +116,12 @@ const CaseStudy = () => (
               movie information.
             </li>
           </ul>
-        </Col>
-        <Col>
+        </div>
+        <div>
           <img src="img/projects/profile.PNG" alt="project screenshot" className='case-study-img' />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
 
   </div>
 );

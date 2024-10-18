@@ -1,25 +1,23 @@
 import React from 'react';
 import './Contact.scss';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 const Contact = () => (
   <div id="contact" className='section'>
     <h1 className='section-header'>Get in Touch with Me</h1>
     <div className='card-container'>
-      <Card className='contact-card'>
-        <Card.Body className='contact-card-body'>
+      <div className='contact-card'>
+        <div className='contact-card-body'>
           <h4 className='card-title'>
             If you'd like to talk to me about
             employment opportunities, my Github projects,
             or anything in between; contact me in your preferred
             method below!
           </h4>
-          <Button className='contact-btn' href="mailto:jbmitchell747@gmail.com">Email Me!</Button>
-          <Button className='contact-btn' href="https://github.com/jbmitchell7" target="_blank">My Github Profile</Button>
-          <Button className='contact-btn' href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">Connect with Me on LinkedIn</Button>
-        </Card.Body>
-      </Card>
+          <button className='contact-btn' href="mailto:jbmitchell747@gmail.com">Email Me!</button>
+          <button className='contact-btn' href="https://github.com/jbmitchell7" target="_blank">My Github Profile</button>
+          <button className='contact-btn' href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">Connect with Me on LinkedIn</button>
+        </div>
+      </div>
     </div>
   </div>
 );
