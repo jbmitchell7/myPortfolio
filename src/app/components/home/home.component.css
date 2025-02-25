@@ -1,0 +1,20 @@
+.icon-btn {
+  transform: scale(1.5, 1.5);
+}
+
+.icon-btn:hover {
+  transform: scale(1.7, 1.7);
+}
+
+@keyframes mouse-scroll {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 15px);
+  }
+}
+
+.mouse-wheel {
+  animation: 1s mouse-scroll infinite alternate linear;
+}

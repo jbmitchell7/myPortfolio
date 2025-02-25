@@ -9,10 +9,10 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"zhang-renyang.vscode-react",
 				"dbaeumer.vscode-eslint",
 				"eamodio.gitlens",
-				"bradlc.vscode-tailwindcss"
+				"bradlc.vscode-tailwindcss",
+        "angular.ng-template"
 			]
 		}
 	},
