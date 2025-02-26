@@ -18,3 +18,11 @@
     font-size: var(--text-xl);
   }
 }
+
+.section {
+  min-height: 50vh;
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: ". content .";
+}
