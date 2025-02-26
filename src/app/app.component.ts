@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { NavigationComponent } from './components/navigation/navigation.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsListComponent } from './components/projects-list/projects-list.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MenuItem } from 'primeng/api';
+import { MenubarModule } from 'primeng/menubar';
 
 @Component({
   selector: 'app-root',
   imports: [
-    NavigationComponent,
+    MenubarModule,
     HomeComponent,
     AboutComponent,
     ExperienceComponent,
@@ -20,5 +21,31 @@ import { ContactComponent } from './components/contact/contact.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+  menuItems: MenuItem[] = [
+    {
+      label: 'Home',
+      url: '#home',
+      target: '_self'
+    },
+    {
+      label: 'About',
+      url: '#about',
+      target: '_self'
+    },
+    {
+      label: 'Experience',
+      url: '#experience',
+      target: '_self'
+    },
+    {
+      label: 'Projects',
+      url: '#projects',
+      target: '_self'
+    },
+    {
+      label: 'Contact',
+      url: '#contact',
+      target: '_self'
+    }
+  ];
 }

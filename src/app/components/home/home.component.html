@@ -1,23 +1,23 @@
-<div id="home">
-  <img src="img/jakesportrait.jpg" alt="Jake Mitchell Portrait" className="w-96 rounded-full" />
-  <h1>Jake Mitchell</h1>
-  <div>
-    <button class="icon-btn" href="mailto:jake@thundercloud.dev">
-      <img alt="email icon"/>
-    </button>
-    <button class="icon-btn" href="https://github.com/jbmitchell7" target="_blank">
+<div id="home" class="flex flex-col gap-1 h-dvh justify-center items-center">
+  <img src="img/jakesportrait.jpg" alt="Jake Mitchell Portrait" class="w-96 rounded-full" />
+  <h1 class="text-4xl">Jake Mitchell</h1>
+  <div class="flex gap-4">
+    <a href="mailto:jake@thundercloud.dev" class="p-button">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a class="p-button" href="https://github.com/jbmitchell7" target="_blank">
       <img src="img/logos/github.svg" alt="Github Logo" />
-    </button>
-    <button class="icon-btn" href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">
+    </a>
+    <a class="p-button" href="https://www.linkedin.com/in/jakebmitchell/" target="_blank">
       <img src="img/logos/linkedin.svg" alt="LinkedIn Logo" />
-    </button>
+    </a>
   </div>
-  <button href="#contact">Hire Me</button>
-  <div class="absolute bottom-px">
+  <a class="p-button" href="#contact">Hire Me</a>
+  <div class="flex flex-col items-center absolute bottom-px">
     <p>Scroll Down</p>
-    <svg className="mouse-svg mr-2" width="40" height="45">
+    <svg class="mouse-svg mr-2" width="40" height="45">
       <ellipse cx="25" cy="25" rx="14" ry="18" stroke="black" strokeWidth="2" fill="none" />
-      <circle className="mouse-wheel" cx="25" cy="15" r="2" fill="black" />
+      <circle class="mouse-wheel" cx="25" cy="15" r="2" fill="black" />
     </svg>
   </div>
 </div>
