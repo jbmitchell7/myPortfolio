@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
+import { PanelModule } from 'primeng/panel';
 
 @Component({
   selector: 'contact',
-  imports: [],
+  imports: [PanelModule, ButtonModule],
   templateUrl: './contact.component.html'
 })
-export class ContactComponent {
-
-}
+export class ContactComponent {}

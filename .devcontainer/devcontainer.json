@@ -12,7 +12,9 @@
 				"dbaeumer.vscode-eslint",
 				"eamodio.gitlens",
 				"bradlc.vscode-tailwindcss",
-        "angular.ng-template"
+        "angular.ng-template",
+        "christian-kohler.npm-intellisense",
+        "pmneo.tsimporter"
 			]
 		}
 	},

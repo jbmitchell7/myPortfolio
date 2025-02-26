@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { education, work } from '../../data/experience';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'experience',
-  imports: [],
+  imports: [CardModule],
   templateUrl: './experience.component.html'
 })
 export class ExperienceComponent {

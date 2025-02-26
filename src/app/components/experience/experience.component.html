@@ -1,21 +1,29 @@
 <div id="experience">
-  <h1 className='section-header'>Experience</h1>
+  <h1>Experience</h1>
 
-  <h3 className='experience-title'>Education</h3>
-  @for (item of education; track $index) {
-    <div>
-      <h4>{{item.location}}</h4>
-      <p>{{item.dates}}</p>
-      <p>{{item.diploma}}</p>
-    </div>
-  }
+  <div class="flex justify-center  gap-4">
+    <p-card>
+      <h2>Education</h2>
+      @for (item of education; track $index) {
+        <div>
+          <h4>{{item.location}}</h4>
+          <p>{{item.dates}}</p>
+          <p>{{item.diploma}}</p>
+        </div>
+      }
+    </p-card>
 
-  <h3 className='experience-title'>Work</h3>
-  @for (job of work; track $index) {
-    <div>
-      <h4>{{job.title}}</h4>
-      <p>{{job.dates}}</p>
-      <p>{{job.description}}</p>
-    </div>
-  }
+    <p-card>
+      <h2>Work</h2>
+      <div class="flex flex-col gap-3">
+        @for (job of work; track $index) {
+          <div>
+            <h4>{{job.title}}</h4>
+            <p>{{job.dates}}</p>
+            <p>{{job.description}}</p>
+          </div>
+        }
+      </div>
+    </p-card>
+  </div>
 </div>

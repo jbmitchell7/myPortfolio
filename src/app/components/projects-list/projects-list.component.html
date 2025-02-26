@@ -1,14 +1,18 @@
 <div id="projects">
   <h1>Projects</h1>
-  @for (project of projects; track $index) {
-    <div>
-      <img [src]="project.screenshot" alt="project-screenshot" />
-      <h3>{{project.title}}</h3>
-      <h5>{{project.description}}</h5>
-      <div>
-        <a [href]="project.github" target="_blank">Github Source</a>
-        <a [href]="project.projectUrl" target="_blank">See Project</a>
-      </div>
-    </div>
-  }
+  <div class="flex flex-col sm:flex-row gap-2">
+    @for (project of projects; track $index) {
+      <p-card>
+        <div class="flex flex-col gap-3">
+          <img [src]="project.screenshot" alt="project-screenshot" class="max-w-96" />
+          <h3>{{project.title}}</h3>
+          <p>{{project.description}}</p>
+          <div class="flex gap-4">
+            <a class="p-button" [href]="project.github" target="_blank">Github Source</a>
+            <a class="p-button" [href]="project.projectUrl" target="_blank">See Project</a>
+          </div>
+        </div>
+      </p-card>
+    }
+  </div>
 </div>
