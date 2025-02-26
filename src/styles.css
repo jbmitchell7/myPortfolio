@@ -17,12 +17,28 @@
   h4 {
     font-size: var(--text-xl);
   }
+
+  h5 {
+    font-size: var(--text-lg);
+  }
+
+  p {
+    font-size: var(--text-sm);
+  }
 }
 
 .section {
-  min-height: 50vh;
   padding-top: 8rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: ". content .";
+  grid-template: 
+    ". content ."
+    / 1fr 3fr 1fr
+}
+
+.section-content {
+  grid-area: content;
+}
+
+.p-panel-title {
+  font-size: var(--text-3xl);
 }
