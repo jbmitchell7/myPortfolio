@@ -10,5 +10,4 @@ import { SectionWrapperComponent } from '../section-wrapper/section-wrapper.comp
 })
 export class ProjectsListComponent {
   projects = projects;
-  startValue = projects.map(p => p.title);
 }

@@ -1,5 +1,5 @@
 <section-wrapper id="projects" header="Projects">
-  <p-accordion [multiple]="true" [value]="startValue">
+  <p-accordion [multiple]="true" [value]="0">
     @for (project of projects; track project.title) {
     <p-accordion-panel [value]="project.title">
       <p-accordion-header>{{project.title}}</p-accordion-header>
