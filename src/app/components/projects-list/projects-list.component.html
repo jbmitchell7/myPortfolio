@@ -5,14 +5,14 @@
       <p-accordion-header>{{project.title}}</p-accordion-header>
       <p-accordion-content>
         <div class="flex flex-col gap-4">
-          <div class="flex justify-between">
-            <p class="w-1/2">{{project.description}}</p>
+          <div class="flex flex-col md:flex-row gap-8 justify-between">
+            <p class="md:w-1/2">{{project.description}}</p>
             <div class="flex items-center gap-4">
               <a class="p-button" [href]="project.github" target="_blank">Github Source</a>
               <a class="p-button" [href]="project.projectUrl" target="_blank">See Project</a>
             </div>
           </div>
-          <img [src]="project.screenshot" alt="project-screenshot" class="min-w-64 h-auto" />
+          <img [src]="project.screenshot" alt="project-screenshot" class="md:min-w-64 h-auto" />
         </div>
       </p-accordion-content>
     </p-accordion-panel>

@@ -1,5 +1,5 @@
 <section-wrapper id="experience" header="Experience">
-  <div class="flex justify-center gap-4">
+  <div class="flex flex-col md:flex-row justify-center gap-4">
     <div class="flex flex-col gap-3">
       <h3>Education</h3>
       @for (item of education; track $index) {
@@ -11,7 +11,7 @@
       }
     </div>
 
-    <p-divider layout="vertical" />
+    <p-divider [layout]="innerWidth >= 640 ? 'vertical' : 'horizontal'" />
 
     <div class="flex flex-col gap-3">
       <h3>Work</h3>
