@@ -1,18 +1,22 @@
-<div id="projects" class="section">
-  <h1>Projects</h1>
-  <div class="flex flex-col gap-2">
-    @for (project of projects; track $index) {
-      <p-card>
-        <div class="flex flex-col gap-3">
-          <h3>{{project.title}}</h3>
-          <img [src]="project.screenshot" alt="project-screenshot" class="min-w-64 h-auto" />
-          <p>{{project.description}}</p>
-          <div class="flex gap-4">
+<section-wrapper id="projects" header="Projects">
+  <p-accordion [multiple]="true" [value]="startValue">
+    @for (project of projects; track project.title) {
+    <p-accordion-panel [value]="project.title">
+      <p-accordion-header>{{project.title}}</p-accordion-header>
+      <p-accordion-content>
+        <div class="flex flex-col gap-4">
+          <div class="flex justify-between">
+          <p class="w-1/2">{{project.description}}</p>
+          <div class="flex items-center gap-4">
             <a class="p-button" [href]="project.github" target="_blank">Github Source</a>
             <a class="p-button" [href]="project.projectUrl" target="_blank">See Project</a>
           </div>
         </div>
-      </p-card>
+          <img [src]="project.screenshot" alt="project-screenshot" class="min-w-64 h-auto" />
+          
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
     }
-  </div>
-</div>
+  </p-accordion>
+</section-wrapper>
