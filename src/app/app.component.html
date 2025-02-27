@@ -1,5 +1,11 @@
 <div class="fixed w-full z-50">
-  <p-menubar [model]="menuItems" />
+  <p-menubar [model]="menuItems">
+    <ng-template #end>
+      <p-button (onClick)="toggleDarkMode()">
+        <i class="fa-regular" [class.fa-sun]="!darkMode" [class.fa-moon]="darkMode"></i>
+      </p-button>
+    </ng-template>
+  </p-menubar>
 </div>
 <div class="p-5">
   <home />
