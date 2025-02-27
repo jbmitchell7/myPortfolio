@@ -5,9 +5,9 @@
       <p-accordion-header>{{project.title}}</p-accordion-header>
       <p-accordion-content>
         <div class="flex flex-col gap-4">
-          <div class="flex flex-col md:flex-row gap-8 justify-between">
-            <p class="md:w-1/2">{{project.description}}</p>
-            <div class="flex flex-col items-center gap-4">
+          <div class="flex flex-col gap-8 justify-between">
+            <p>{{project.description}}</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
               <a class="p-button w-3/4 md:w-48" [href]="project.github" target="_blank">Github Source</a>
               @if (project.githubSecondary) {
                 <a class="p-button w-3/4 md:w-48" [href]="project.githubSecondary" target="_blank">Github Back-End</a>

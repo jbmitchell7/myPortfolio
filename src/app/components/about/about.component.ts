@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { skills } from '../../data/skills';
+import { about, skills } from '../../data/skills';
 import { SectionWrapperComponent } from '../section-wrapper/section-wrapper.component';
 
 @Component({
@@ -9,4 +9,5 @@ import { SectionWrapperComponent } from '../section-wrapper/section-wrapper.comp
 })
 export class AboutComponent {
   jobSkills = skills;
+  aboutMe = about;
 }

@@ -31,7 +31,7 @@ export const work: Work[] = [
   {
     title: "Software Developer",
     dates: "September 2023-Present",
-    description: "Full Stack development on enterprise-level software primarily working in Angular"
+    description: "Full stack development on enterprise-level software primarily working in Angular"
   },
   {
     title: "IT Specialist",
@@ -41,6 +41,6 @@ export const work: Work[] = [
   {
     title: "IT Intern",
     dates: "June 2016-May 2017",
-    description: "Performed Help-Desk duties such as Office 365 administration and hardware setup while in college."
+    description: "Performed help desk duties such as Office 365 administration and hardware setup while in college."
   }
 ]
